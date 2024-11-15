@@ -10,10 +10,6 @@ publicStatic/
 ColumnSchema/*.json
 TableSchema/*.json
 
-src-AllTables/HtmlFiles
-src-AllTables/Js
-src-AllTables/*.html
-
 .env
 .vscode
 .log
