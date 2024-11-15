@@ -1,0 +1,76 @@
+[
+  {
+    "name": "FromBranchVoucher",
+    "isTitle": true
+  },
+  {
+    "name": "Dashboard",
+    "url": "index.html",
+    "icon": "grid-fill"
+  },
+  {
+    "name": "Create",
+    "key": "create",
+    "icon": "bi bi-file-earmark-plus",
+    "submenu": [
+      {
+        "name": "Return-DC",
+        "url": "createReturnDC.html"
+      }
+    ]
+  },
+  {
+    "name": "VerticalShow",
+    "key": "Show",
+    "icon": "bi bi-table",
+    "submenu": [
+      {
+        "name": "DCItems",
+        "url": "ShowDCItems.html"
+      },
+      {
+        "name": "BranchDCItems",
+        "url": "ShowDCBranchItems.html"
+      }
+    ]
+  },
+  {
+    "name": "Insert",
+    "key": "insert",
+    "icon": "stack",
+    "submenu": [
+      {
+        "name": "ToDC",
+        "url": "insertToDC.html"
+      },
+      {
+        "name": "ToReturn-DC",
+        "url": "insertToReturnDC.html"
+      },
+      {
+        "name": "Scan",
+        "url": "insertScan.html"
+      }
+    ]
+  },
+  {
+    "name": "Status",
+    "key": "Status",
+    "icon": "stack",
+    "submenu": [
+      {
+        "name": "DC",
+        "url": "StatusDC.html"
+      },
+      {
+        "name": "BranchFiter",
+        "url": "StatusDCBranchFilter.html"
+      }
+    ]
+  },
+  {
+    "name": "Qr-Reports",
+    "icon": "bi bi-qr-code",
+    "url": "../FromBranchQrCodes/"
+  }
+]
