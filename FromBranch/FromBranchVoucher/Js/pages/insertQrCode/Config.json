@@ -1,6 +1,7 @@
 {
     "GetUrl": "/Custom/Clients/Laundry/Factory/Inward/Scan/QrCode/RowQrData",
-    "PostUrl": "/Custom/Clients/Laundry/Factory/Inward/Scan/QrCode",
+    "PostUrl_16Nov2024": "/Custom/Clients/Laundry/Factory/Inward/Scan/QrCode",
+    "PostUrl": "/Custom/Cleaning/Factory/V1/Inward/Scan/QrCode",
     "FormLoad": {
         "DcDetails": {
             "GetUrl": "/binV4/BranchDC/Show"
