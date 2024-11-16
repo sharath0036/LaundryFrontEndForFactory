@@ -1,78 +1,50 @@
-let StartFunc = async ({ inFetchResonse }) => {
-    let jVarLocalResponseData = await inFetchResonse.json();
+let StartFunc = async( inFromFetch ) => {
+    let jVarLocalFetchData =await inFromFetch.json();
+    if (jVarLocalFetchData.KTF === true) {
+        jFLocalForSuccess(jVarLocalFetchData);
+    }
+    else {
+        if (jVarLocalFetchData.KTF === false) {
 
+            let jVarLocalHtmlId = 'InputPkId';
+            let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
+            let jVarLocalLength = jVarLocalInputPkId.value.trim().length;
+            jVarLocalInputPkId.setSelectionRange(0, jVarLocalLength);
 
-    if (Object.values(jVarLocalResponseData).length > 0) {
-        let jVarLocalFetchData = jVarLocalResponseData;
-        jVarGlobalPresentViewData2 = jVarLocalFetchData;
+            Swal.fire({
+                icon: 'error',
+                title: `Check And Scan`,
+                confirmButtonText: "ok",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // window.location.href = ""
+                }
+            });
 
-        jFLocalToInputInputPkId({ inInputPkId: jVarLocalFetchData.pk });
-        jFLocalToInputInputProductNameId({ inInputProductNameId: jVarLocalFetchData.ItemName });
-        jFLocalToInputInputSalePriceId({ inInputSalePriceId: jVarLocalFetchData.Rate });
-        jFLocalToInputFactorySelectedId({ inInputFactorySelectedId: jVarLocalFetchData.location })
-        jFLocalToInputBranchNameId({ inInputValue: jVarLocalFetchData.BookingData.OrderData.BranchName });
-        jFLocalToInputOrderNumberId({ inInputValue: jVarLocalFetchData.GenerateReference.ReferncePk });
-        jFLocalToInputOrderDateId({ inInputValue: jVarLocalFetchData.BookingData.OrderData.Currentdateandtime });
-        jFLocalToInputDeliveryDateId({ inInputValue: jVarLocalFetchData.DeliveryDateTime });
-        jFLocalRunSaveClick();
-    };
+        } else {
+            let jVarLocalHtmlId = 'InputPkId';
+            let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
+            let jVarLocalLength = jVarLocalInputPkId.value.trim().length;
+            jVarLocalInputPkId.setSelectionRange(0, jVarLocalLength);
+
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: `${inFromFetch.KReason},${JSON.stringify(inFromFetch.ServerSideCheck[0])}`
+            });
+        }
+    }
 };
 
-let jFLocalRunSaveClick = () => {
-    let jVarLocalHtmlId = 'ButtonSaveId';
-    let jVarLocalButtonSaveId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalButtonSaveId.click();
-}
+let jFLocalForSuccess = (jVarLocalFetchData) => {
+    const url = new URL(window.location.href);
+    const params1 = new URLSearchParams(url.search);
 
-let jFLocalToInputInputProductNameId = ({ inInputProductNameId }) => {
-    let jVarLocalHtmlId = 'InputProductNameId';
-    let jVarLocalInputProductNameId = document.getElementById(jVarLocalHtmlId);
+    params1.set("NewPk", jVarLocalFetchData.ScanNo);
+    params1.set("ShowAlert", true);
+    window.location.href = `${url.origin}${url.pathname}?${params1}`;
 
-    if (jVarLocalInputProductNameId === null === false) {
-        jVarLocalInputProductNameId.value = inInputProductNameId;
-    };
-};
-
-let jFLocalToInputInputSalePriceId = ({ inInputSalePriceId }) => {
-    let jVarLocalHtmlId = 'InputSalePriceId';
-    let jVarLocalInputSalePriceId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputSalePriceId.value = inInputSalePriceId;
-};
-
-let jFLocalToInputFactorySelectedId = ({ inInputFactorySelectedId }) => {
-    let jVarLocalHtmlId = 'InputFactorySelectedId';
-    let jVarLocalInputFactorySelectedId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputFactorySelectedId.value = inInputFactorySelectedId;
-};
-
-let jFLocalToInputInputPkId = ({ inInputPkId }) => {
-    let jVarLocalHtmlId = 'InputPkId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputPkId.value = inInputPkId;
-};
-
-let jFLocalToInputBranchNameId = ({ inInputValue }) => {
-    let jVarLocalHtmlId = 'InputBranchNameId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputPkId.value = inInputValue;
-};
-
-let jFLocalToInputOrderNumberId = ({ inInputValue }) => {
-    let jVarLocalHtmlId = 'OrderNumberId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputPkId.value = inInputValue;
-};
-
-let jFLocalToInputOrderDateId = ({ inInputValue }) => {
-    let jVarLocalHtmlId = 'OrderDateId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputPkId.value = inInputValue;
-};
-
-let jFLocalToInputDeliveryDateId = ({ inInputValue }) => {
-    let jVarLocalHtmlId = 'DeliveryDateId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalInputPkId.value = inInputValue;
+    window.location.href = new_url.href;
 };
 
 export { StartFunc };
