@@ -1,15 +1,10 @@
 let StartFunc = async ({ inFetchResonse }) => {
-    let jVarLocalinFetchResonse = await inFetchResonse.text();
-
-    let jVarLocalHtmlId = 'InputPkId';
-    let jVarLocalInputPkId = document.getElementById(jVarLocalHtmlId);
-    let jVarLocalLength = jVarLocalInputPkId.value.trim().length;
-    jVarLocalInputPkId.setSelectionRange(0, jVarLocalLength);
-
     Swal.fire({
-        icon: "error",
-        title: `${jVarLocalinFetchResonse}`
+        icon: "error", 
+        title: "Server Error (500)",
+        text: "An unexpected server error occurred. Please try again later.",
+        footer: "If the issue persists, contact support.", 
     });
-};
-
+    
+}
 export { StartFunc };
