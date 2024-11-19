@@ -46,18 +46,19 @@
         },
         {
             "title": "Sent From Branch",
-            "formatter": "ItemsFormatter2",
+            "formatter": "",
             "field": "Sent"
         },
         {
             "title": "Scanned",
-            "formatter": "ItemsFormatter",
-            "footerFormatter": "priceFormatter"
+            "field":"scanned",
+            "formatter": "",
+            "footerFormatter": ""
         },
         {
             "title": "Pending",
             "field": "Pending",
-            "formatter":"PendingFormatter"
+            "formatter":""
         },
         {
             "title": "EntryCancel",
