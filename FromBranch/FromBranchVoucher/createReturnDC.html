@@ -16,22 +16,46 @@
                                             <label for="Date">Date</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="date" id="Date" class="form-control" name="Date" placeholder=""
-                                                required>
+                                            <input type="date" id="Date" class="form-control" name="Date" placeholder="" required>
                                         </div>
                                         <div class="col-md-4">
                                             <label for="Description">Description</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="Description" class="form-control" name="Description"
-                                                placeholder="" required autofocus>
+                                            <input type="text" id="Description" class="form-control" name="Description" placeholder="" required autofocus>
                                         </div>
                                         <div class="col-md-4">
-                                            <label for="FactoryName">FactroyName</label>
+                                            <label for="FactoryName">Factory Name</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="FactoryName" class="form-control" name="FactoryName"
-                                                readonly>
+                                            <input type="text" id="FactoryName" class="form-control" name="FactoryName" readonly>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="Branch">Branch</label>
+                                        </div>
+                                        <div class="col-md-8 form-group position-relative">
+                                            <div class="input-group">
+                                                <select id="Branch" class="form-control" name="Branch" required>
+                                                    <option value="">Select Branch</option>
+                                                    <option value="KKD">KKD</option>
+                                                    <option value="ANR">ANR</option>
+                                                    <option value="CSO">CSO</option>
+                                                    <option value="GD">GD</option>
+                                                    <option value="GWK">GWK</option>
+                                                    <option value="KPA">KPA</option>
+                                                    <option value="LBC">LBC</option>
+                                                    <option value="MSNvzm">MSNvzm</option>
+                                                    <option value="MVP">MVP</option>
+                                                    <option value="NGGOS">NGGOS</option>
+                                                    <option value="PBS">PBS</option>
+                                                    <option value="RandB">RandB</option>
+                                                    <option value="SP">SP</option>
+                                                    <option value="VUDA">VUDA</option>
+                                                    <option value="VZM">VZM</option>
+                                                    <option value="YD">YD</option>
+                                                </select>
+                                                <span class="input-group-text">&#9662;</span> <!-- Unicode for a down arrow -->
+                                            </div>
                                         </div>
                                         <div class="col-sm-12 d-flex justify-content-end">
                                             <button class="btn btn-success me-1 mb-1" id="SaveButtonId">Save</button>
@@ -39,6 +63,7 @@
                                     </div>
                                 </div>
                             </form>
+                            
                         </div>
                     </div>
                 </div>
