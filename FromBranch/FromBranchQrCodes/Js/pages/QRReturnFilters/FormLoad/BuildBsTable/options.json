@@ -9,6 +9,7 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination":"true",
+    "filterControl": true,
     "columns": [
         {
             "field": "KS-Serial",
@@ -17,7 +18,8 @@
         },
         {
             "title": "Order #",
-            "field": "OrderNumber"
+            "field": "OrderNumber",
+            "filterControl": "select"
         },
         {
             "title": "Order Date",
@@ -30,38 +32,34 @@
         {
             "title": "QrCode",
             "field": "QrCodeId",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "ItemName",
             "field": "ItemName",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "Rate",
             "field": "Rate",
-            "footerFormatter":"jVarLocalFormatterFunc",
-            "filtercontrol": "select"
+            "footerFormatter":"jVarLocalFormatterFunc"
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber",
-            "filtercontrol": "select"
+            "field": "VoucherNumber"
         },
         {
             "title": "R DCDate",
-            "field": "DCDate",
-            "filtercontrol": "select"
+            "field": "DCDate"
         },
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "GenSpan",
-            "field": "TimeSpan",
-            "filtercontrol": "select"
+            "field": "TimeSpan"
         }
     ]
 }

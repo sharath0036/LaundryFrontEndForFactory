@@ -40,7 +40,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "filtercontrol": "select"
+            "footerFormatter":"jVarLocalFormatterFunc"
         },
         {
             "field": "VoucherNumber",

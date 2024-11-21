@@ -18,7 +18,9 @@
     </section>
     <!-- Inverse table end -->
 </div>
+{% endblock %}
 
+{% block js %}
 <script>
     let jVarGlobalPresentViewData;
 
@@ -77,22 +79,27 @@
             '</a>  '
         ].join('')
     }
-    function rowStyle(row, index) {
 
-        if (row.EntryReturnStarus === true) {
 
-            return {
-                classes: 'bg-danger text-white' // Green background with white text
+    function jVarLocalFormatterFunc(data) {
+        var field = this.field;
+        let LocalTotal = data.map(function (row) {
+            if (row[field] === undefined) {
+                return 0;
             };
-        } else {
-            return {};
-        }
-    }
+            return +row[field];
+        }).reduce(function (sum, i) {
+            return sum + i
+        }, 0);
+
+        return LocalTotal.toFixed(2);
+    };
 
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-<script type="module" src="./Js/pages/QRFilter/StartFunc.js"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.23.5/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+<script type="module" src="./Js/pages/PendingQrFilter/StartFunc.js"></script>
 
 
 {% endblock %}
