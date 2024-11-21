@@ -31,6 +31,10 @@
             "filtercontrol": "select"
         },
         {
+            "field": "Branch",
+            "title": "BranchName"
+        },
+        {
             "title": "Items",
             "formatter": "ItemsFormatter",
             "footerFormatter": "priceFormatter"

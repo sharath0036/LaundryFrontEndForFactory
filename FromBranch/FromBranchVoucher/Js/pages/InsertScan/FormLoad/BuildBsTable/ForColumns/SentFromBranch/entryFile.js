@@ -1,5 +1,7 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.formatter = ItemsFormatter2;
+    inFindColumn.footerFormatter = priceFormatter;
+
 };
 function ItemsFormatter2(value, row, index) {
     let jVarLocalBranchName = getUrlQueryParams1({ inGetKey: "BranchName" });
@@ -17,5 +19,15 @@ function ItemsFormatter2(value, row, index) {
 
     ].join('')
 };
+
+
+function priceFormatter(data) {
+    var field = this.field
+    return '' + data.map(function (row) {
+        return +row.Sent
+    }).reduce(function (sum, i) {
+        return sum + i
+    }, 0)
+}
 
 export { StartFunc };

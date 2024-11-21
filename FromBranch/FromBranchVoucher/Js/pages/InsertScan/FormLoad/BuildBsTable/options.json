@@ -8,6 +8,8 @@
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
+    "filterControl":true,
+    "pagination":"true",
     "url": "/Custom/Clients/Laundry/Factory/Inward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
@@ -27,7 +29,8 @@
         },
         {
             "field": "BranchName",
-            "title": "BranchName"
+            "title": "BranchName",
+            "filterControl":"select"
         },
         {
             "field": "TimeSpan",
@@ -47,7 +50,8 @@
         {
             "title": "Sent From Branch",
             "formatter": "",
-            "field": "Sent"
+            "field": "Sent",
+            "footerFormatter": ""
         },
         {
             "title": "Scanned",
@@ -58,7 +62,8 @@
         {
             "title": "Pending",
             "field": "Pending",
-            "formatter":""
+            "formatter":"",
+            "footerFormatter": ""
         },
         {
             "title": "EntryCancel",
