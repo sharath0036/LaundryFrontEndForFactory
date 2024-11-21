@@ -6,6 +6,7 @@
     "data": [],
     "onClickRow": "",
     "responseHandler": "responseHandler",
+    "pagination":"true",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
     "url": "/Custom/Clients/Laundry/Factory/Process/Washing/Scan/Voucher/$FactoryName",
