@@ -1,5 +1,6 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.formatter = PendingFormatter;
+    inFindColumn.footerFormatter = priceFormatter;
 };
 
 function PendingFormatter(value, row, index) {
@@ -21,5 +22,9 @@ function PendingFormatter(value, row, index) {
     }
 };
 
-
+function priceFormatter(data) {
+    var field = this.field; return '' + data.map(function (row) {
+        return parseFloat(row[field]) || 0;
+    }).reduce(function (sum, i) { return sum + i; }, 0);
+}
 export { StartFunc };
