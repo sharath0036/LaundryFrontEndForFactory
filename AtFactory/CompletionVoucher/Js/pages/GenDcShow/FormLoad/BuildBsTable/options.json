@@ -24,7 +24,8 @@
         },
         {
             "field": "BranchName",
-            "title": "BranchName"
+            "title": "BranchName",
+            "formatter":""
         }
     ]
 }

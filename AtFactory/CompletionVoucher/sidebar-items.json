@@ -38,6 +38,10 @@
       {
         "name": "GenerateDC",
         "url": "GenerateCreateBranchDC.html"
+      },
+      {
+        "name": "Show",
+        "url": "GenerateAllShowAll.html"
       }
     ]
   },
