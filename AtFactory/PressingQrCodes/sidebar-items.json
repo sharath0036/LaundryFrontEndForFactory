@@ -10,8 +10,20 @@
   },
   {
     "name": "All",
-    "url": "QRShowAll.html",
-    "icon": "bi bi-list-ul"
+    "key": "QRAll",
+    "icon": "bi bi-list-ul",
+    "children": [
+      {
+        "name": "Show",
+        "url": "QRAllShow.html",
+        "icon": "bi bi-list-check"
+      },
+      {
+        "name": "Filter",
+        "url": "QRAllFilter.html",
+        "icon": "bi bi-list-check"
+      }
+    ]
   },
   {
     "name": "Pending",
