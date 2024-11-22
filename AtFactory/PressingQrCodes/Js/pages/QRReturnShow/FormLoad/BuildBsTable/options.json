@@ -8,7 +8,7 @@
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "rowStyle",
-    "pagination":"true",
+    "pagination": "true",
     "columns": [
         {
             "field": "KS-Serial",
@@ -29,39 +29,32 @@
         },
         {
             "title": "QrCode",
-            "field": "QrCodeId",
-            "filtercontrol": "select"
+            "field": "QrCodeId"
         },
         {
             "title": "ItemName",
-            "field": "ItemName",
-            "filtercontrol": "select"
+            "field": "ItemName"
         },
         {
             "title": "Rate",
             "field": "Rate",
-            "filtercontrol": "select",
             "footerFormatter": "totalFormatter"
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber",
-            "filtercontrol": "select"
+            "field": "VoucherNumber"
         },
         {
             "title": "R DCDate",
-            "field": "DCDate",
-            "filtercontrol": "select"
+            "field": "DCDate"
         },
         {
             "title": "BranchName",
-            "field": "BranchName",
-            "filtercontrol": "select"
+            "field": "BranchName"
         },
         {
             "title": "GenSpan",
-            "field": "TimeSpan",
-            "filtercontrol": "select"
+            "field": "TimeSpan"
         }
     ]
 }

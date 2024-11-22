@@ -61,12 +61,36 @@
   },
   {
     "name": "Return",
-    "url": "QRReturn.html",
-    "icon": "bi bi-arrow-counterclockwise"
+    "key": "QRReturn",
+    "icon": "bi bi-arrow-counterclockwise",
+    "submenu": [
+      {
+        "name": "Show",
+        "url": "QRReturnShow.html",
+        "icon": "bi bi-list-check"
+      },
+      {
+        "name": "Filter",
+        "url": "QRReturnFilter.html",
+        "icon": "bi bi-list-check"
+      }
+    ]
   },
   {
     "name": "ReWash",
-    "url": "QRReWash.html",
-    "icon": "bi bi-repeat"
+    "key": "QRReWash",
+    "icon": "bi bi-repeat",
+    "submenu": [
+      {
+        "name": "Show",
+        "url": "QRReWashShow.html",
+        "icon": "bi bi-list-check"
+      },
+      {
+        "name": "Filter",
+        "url": "QRReWashFilter.html",
+        "icon": "bi bi-list-check"
+      }
+    ]
   }
 ]

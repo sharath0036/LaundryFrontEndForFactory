@@ -6,9 +6,10 @@
     "data": [],
     "onClickRow": "",
     "responseHandler": "",
+    "filterControl": "true",
     "queryParams": "",
-    "pagination":"true",
     "rowStyle": "rowStyle",
+    "pagination": "true",
     "columns": [
         {
             "field": "KS-Serial",
@@ -16,57 +17,49 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
+            "title": "Order #",
             "field": "OrderNumber",
-            "title": "Order #"
+            "filterControl": "select"
         },
         {
-            "field": "OrderDate",
-            "title": "Order Date"
+            "title": "Order Date",
+            "field": "OrderDate"
         },
         {
-            "field": "DeliveryDate",
-            "title": "Delivery Date"
+            "title": "Delivery Date",
+            "field": "DeliveryDate"
         },
         {
-            "field": "QrCodeId",
             "title": "QrCode",
+            "field": "QrCodeId",
             "filtercontrol": "select"
         },
         {
-            "field": "ItemName",
             "title": "ItemName",
+            "field": "ItemName",
             "filtercontrol": "select"
         },
         {
-            "field": "Rate",
             "title": "Rate",
+            "field": "Rate",
             "filtercontrol": "select",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
+            "title": "R DC #",
             "field": "VoucherNumber",
-            "title": "DC #",
             "filtercontrol": "select"
         },
         {
-            "title": "DC Date",
+            "title": "R DCDate",
             "field": "DCDate",
             "filtercontrol": "select"
         },
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "Status",
-            "field": "Status",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStatus",
-            "filtercontrol": "select"
+            "filterControl": "select"
+
         },
         {
             "title": "GenSpan",

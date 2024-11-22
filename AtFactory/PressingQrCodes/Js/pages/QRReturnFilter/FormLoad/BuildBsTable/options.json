@@ -6,6 +6,7 @@
     "data": [],
     "onClickRow": "",
     "responseHandler": "",
+    "filterControl": "true",
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination":"true",
@@ -17,7 +18,8 @@
         },
         {
             "title": "Order #",
-            "field": "OrderNumber"
+            "field": "OrderNumber",
+            "filterControl": "select"
         },
         {
             "title": "Order Date",
@@ -29,38 +31,33 @@
         },
         {
             "title": "QrCode",
-            "field": "QrCodeId",
-            "filtercontrol": "select"
+            "field": "QrCodeId"
         },
         {
             "title": "ItemName",
-            "field": "ItemName",
-            "filtercontrol": "select"
+            "field": "ItemName"
         },
         {
             "title": "Rate",
             "field": "Rate",
-            "filtercontrol": "select"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber",
-            "filtercontrol": "select"
+            "field": "VoucherNumber"
         },
         {
             "title": "R DCDate",
-            "field": "DCDate",
-            "filtercontrol": "select"
+            "field": "DCDate"
         },
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "GenSpan",
-            "field": "TimeSpan",
-            "filtercontrol": "select"
+            "field": "TimeSpan"
         }
     ]
 }
