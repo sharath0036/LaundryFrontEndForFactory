@@ -1,0 +1,30 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "responseHandler": "responseHandler",
+    "queryParams": "queryParams",
+    "data": [],
+    "onClickRow": "",
+    "url": "/binV4/FactoryOut_DC/Show/Filter/RefDC/$RefDCValue",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "FactoryName",
+            "title": "FactoryName"
+        },
+        {
+            "field": "RefDC",
+            "title": "RefDC "
+        },
+        {
+            "field": "BranchName",
+            "title": "BranchName"
+        }
+    ]
+}
