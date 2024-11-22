@@ -31,6 +31,17 @@
     ]
   },
   {
+    "name": "GenerateDC",
+    "key": "Generate",
+    "icon": "stack",
+    "submenu": [
+      {
+        "name": "GenerateDC",
+        "url": "GenerateCreateBranchDC.html"
+      }
+    ]
+  },
+  {
     "name": "Status",
     "key": "Status",
     "icon": "stack",
