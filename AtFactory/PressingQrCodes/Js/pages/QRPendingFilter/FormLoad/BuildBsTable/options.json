@@ -6,9 +6,9 @@
     "data": [],
     "onClickRow": "",
     "responseHandler": "",
+    "filterControl": "true",
     "queryParams": "",
     "pagination": "true",
-    "rowStyle": "rowStyle",
     "columns": [
         {
             "field": "KS-Serial",
@@ -17,7 +17,8 @@
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -29,8 +30,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
+            "title": "QrCode"
         },
         {
             "field": "ItemName",
@@ -39,26 +39,12 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
             "title": "BranchName",
             "field": "BranchName",
             "filterControl": "select"
-        },
-        {
-            "title": "Scan",
-            "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStatus",
-            "filterControl": "select"
-        },
-        {
-            "title": "GenSpan",
-            "field": "TimeSpan"
         }
     ]
 }

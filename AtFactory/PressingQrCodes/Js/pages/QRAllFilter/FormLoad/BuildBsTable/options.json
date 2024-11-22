@@ -18,7 +18,8 @@
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -30,8 +31,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
+            "title": "QrCode"
         },
         {
             "field": "ItemName",

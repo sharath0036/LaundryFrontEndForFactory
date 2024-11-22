@@ -7,6 +7,8 @@
     "onClickRow": "",
     "responseHandler": "",
     "queryParams": "",
+    "filterControl": "true",
+    "rowStyle": "",
     "pagination":"true",
     "columns": [
         {
@@ -16,7 +18,8 @@
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -28,25 +31,40 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
+            "title": "QrCode"
+            
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
-            "filtercontrol": "select"
+            "title": "ItemName"
         },
         {
             "field": "Rate",
             "title": "Rate",
-            "filtercontrol": "select",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": "jVarLocalFormatterFunc"
+        },
+        {
+            "field": "VoucherNumber",
+            "title": "DC #"
+        },
+        {
+            "title": "DC Date",
+            "field": "DCDate"
+            
         },
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
+        },
+        {
+            "title": "Return",
+            "field": "EntryReturnStatus"
             
+        },
+        {
+            "title": "TimeSpan",
+            "field": "TimeSpan"
         }
     ]
 }
