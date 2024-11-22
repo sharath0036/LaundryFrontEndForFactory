@@ -40,7 +40,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
             "title": "BranchName",
