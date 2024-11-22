@@ -1,21 +1,21 @@
 import optionsJson from './options.json' with {type: 'json'};
+
 import { StartFunc as onClickRow } from "./onClickRow/EntryFile.js";
 import { StartFunc as queryParams } from "./queryParams/EntryFile.js";
 import { StartFunc as responseHandler } from "./responseHandler/EntryFile.js";
-import { StartFunc as ForColumns } from "./ForColumns/EntryFile.js";
-
-let jVarLocalFactoryName = localStorage.getItem("FactoryName");
 
 const StartFunc = () => {
     var $table = $('#table');
-    let jVarLocalRefDC = getUrlQueryParams({ inGetKey: "RefDC" });
-    ForColumns({ inColumns: optionsJson.columns });
 
     optionsJson.onClickRow = onClickRow;
     optionsJson.queryParams = queryParams;
     optionsJson.responseHandler = responseHandler;
-    optionsJson.url = optionsJson.url.replace("$RefDCValue", jVarLocalRefDC);
+    let jVarLocalVoucherRef = getUrlQueryParams({ inGetKey: "RefDC" });
+    console.log("jVarLocalVoucherRef:",jVarLocalVoucherRef);
+    
+    let jVarLocalBranchName = getUrlQueryParams({ inGetKey: "BranchName" });
 
+    optionsJson.url = `/Custom/Cleaning/Factory/V1/Outward/ToBranch/QrCode/${jVarLocalVoucherRef}/${jVarLocalBranchName}`;
     $table.bootstrapTable(optionsJson);
 };
 
