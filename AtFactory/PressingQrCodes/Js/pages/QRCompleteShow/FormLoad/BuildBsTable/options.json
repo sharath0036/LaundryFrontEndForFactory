@@ -8,7 +8,7 @@
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "",
-    "pagination":"true",
+    "pagination": "true",
     "columns": [
         {
             "field": "KS-Serial",
@@ -34,39 +34,32 @@
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
-            "filtercontrol": "select"
+            "title": "ItemName"
         },
         {
             "field": "Rate",
             "title": "Rate",
-            "filtercontrol": "select",
             "footerFormatter": "totalFormatter"
         },
         {
             "field": "VoucherNumber",
-            "title": "DC #",
-            "filtercontrol": "select"
+            "title": "DC #"
         },
         {
             "title": "DC Date",
-            "field": "DCDate",
-            "filtercontrol": "select"
+            "field": "DCDate"
         },
         {
             "title": "BranchName",
-            "field": "BranchName",
-            "filtercontrol": "select"
+            "field": "BranchName"
         },
         {
             "title": "Return",
-            "field": "EntryReturnStarus",
-            "filtercontrol": "select"
+            "field": "EntryReturnStarus"
         },
         {
             "title": "TimeSpan",
-            "field": "TimeSpan",
-            "filtercontrol": "select"
+            "field": "TimeSpan"
         }
     ]
 }

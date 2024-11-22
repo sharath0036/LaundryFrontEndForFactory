@@ -8,7 +8,6 @@
     "responseHandler": "",
     "queryParams": "",
     "pagination": "true",
-    "rowStyle": "rowStyle",
     "columns": [
         {
             "field": "KS-Serial",
@@ -29,8 +28,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
+            "title": "QrCode"
         },
         {
             "field": "ItemName",
@@ -43,22 +41,7 @@
         },
         {
             "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Scan",
-            "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStatus",
-            "filterControl": "select"
-        },
-        {
-            "title": "GenSpan",
-            "field": "TimeSpan"
+            "field": "BranchName"
         }
     ]
 }
