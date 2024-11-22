@@ -1,0 +1,59 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "data": [],
+    "onClickRow": "",
+    "responseHandler": "",
+    "queryParams": "",
+    "rowStyle": "rowStyle",
+    "pagination":"true",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "title": "Order #",
+            "field": "OrderNumber"
+        },
+        {
+            "title": "Order Date",
+            "field": "OrderDate"
+        },
+        {
+            "title": "Delivery Date",
+            "field": "DeliveryDate"
+        },
+        {
+            "title": "QrCode",
+            "field": "QrCodeId"
+        },
+        {
+            "title": "ItemName",
+            "field": "ItemName"
+        },
+        {
+            "title": "Rate",
+            "field": "Rate"
+        },
+        {
+            "title": "R DC #",
+            "field": "VoucherNumber"
+        },
+        {
+            "title": "R DCDate",
+            "field": "DCDate"
+        },
+        {
+            "title": "BranchName",
+            "field": "BranchName"
+        },
+        {
+            "title": "GenSpan",
+            "field": "TimeSpan"
+        }
+    ]
+}
