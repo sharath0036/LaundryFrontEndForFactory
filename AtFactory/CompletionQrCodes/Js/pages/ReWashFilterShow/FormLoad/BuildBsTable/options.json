@@ -9,6 +9,7 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination":"true",
+    "filterControl": true,
     "columns": [
         {
             "field": "KS-Serial",
@@ -17,7 +18,8 @@
         },
         {
             "title": "Order #",
-            "field": "OrderNumber"
+            "field": "OrderNumber",
+            "filterControl": "select"
         },
         {
             "title": "Order Date",
@@ -45,7 +47,7 @@
         {
             "title": "R DC #",
             "field": "VoucherNumber",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "R DCDate",
@@ -55,7 +57,7 @@
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "GenSpan",
