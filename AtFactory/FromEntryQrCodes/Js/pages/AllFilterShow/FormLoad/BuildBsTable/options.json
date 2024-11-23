@@ -15,11 +15,12 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -31,7 +32,8 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "QrCode",
+            "filterControl": "select"
         },
         {
             "field": "ItemName",
@@ -40,7 +42,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "footerFormatter": "jVarLocalFormatterFunc"
+            "footerFormatter": ""
         },
         {
             "title": "BranchName",
@@ -55,6 +57,11 @@
         {
             "title": "ReWash",
             "field": "ReWashStatus",
+            "filterControl": "select"
+        },
+        {
+            "title": "Return",
+            "field": "ReturnStatus",
             "filterControl": "select"
         },
         {

@@ -32,7 +32,7 @@
         {
             "field": "QrCodeId",
             "title": "QrCode",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "field": "ItemName",
@@ -56,17 +56,8 @@
             "filtercontrol": "select"
         },
         {
-            "title": "ReWash",
-            "field": "ReWashStatus"
-        },
-        {
             "title": "BranchName",
             "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStarus",
             "filterControl": "select"
         },
         {

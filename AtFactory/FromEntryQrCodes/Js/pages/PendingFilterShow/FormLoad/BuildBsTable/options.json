@@ -8,15 +8,17 @@
     "responseHandler": "",
     "queryParams": "",
     "pagination":"true",
+    "filterControl": true,
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -29,7 +31,7 @@
         {
             "field": "QrCodeId",
             "title": "QrCode",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "field": "ItemName",
@@ -40,12 +42,12 @@
             "field": "Rate",
             "title": "Rate",
             "filtercontrol": "select",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
             
         }
     ]

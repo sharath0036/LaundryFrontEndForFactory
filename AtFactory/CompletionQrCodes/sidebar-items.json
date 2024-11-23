@@ -58,39 +58,5 @@
         "icon": "bi bi-filter-circle"
       }
     ]
-  },
-  {
-    "name": "ReWash",
-    "key": "ReWash",
-    "icon": "bi bi-arrow-repeat",
-    "submenu": [
-      {
-        "name": "ShowAll",
-        "url": "ReWashShowAll.html",
-        "icon": "bi bi-filter-circle"
-      },
-      {
-        "name": "Filter Show",
-        "url": "ReWashFilterShow.html",
-        "icon": "bi bi-filter-circle"
-      }
-    ]
-  },
-  {
-    "name": "Return",
-    "key": "Return",
-    "icon": "bi bi-arrow-counterclockwise",
-    "submenu": [
-      {
-        "name": "ShowAll",
-        "url": "ReturnShowAll.html",
-        "icon": "bi bi-filter-circle"
-      },
-      {
-        "name": "Filter Show",
-        "url": "ReturnFilterShow.html",
-        "icon": "bi bi-filter-circle"
-      }
-    ]
   }
 ]

@@ -9,11 +9,12 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination":"true",
+    "filterControl": "select",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "title": "Order #",

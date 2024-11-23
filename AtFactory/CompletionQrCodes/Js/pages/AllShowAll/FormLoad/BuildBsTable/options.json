@@ -8,7 +8,6 @@
     "responseHandler": "",
     "queryParams": "",
     "pagination": "true",
-    "filterControl": true,
     "rowStyle": "rowStyle",
     "columns": [
         {
@@ -50,11 +49,6 @@
         {
             "title": "Status",
             "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "ReWash",
-            "field": "ReWashStatus",
             "filterControl": "select"
         },
         {
