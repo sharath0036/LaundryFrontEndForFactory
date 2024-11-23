@@ -7,6 +7,7 @@
     "queryParams": "queryParams",
     "data": [],
     "onClickRow": "",
+    "pagination":"true",
     "url": "/Custom/Clients/Laundry/Factory/Outward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
