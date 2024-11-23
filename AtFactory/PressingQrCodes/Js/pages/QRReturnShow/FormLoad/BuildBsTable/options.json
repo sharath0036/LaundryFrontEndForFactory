@@ -38,7 +38,7 @@
         {
             "title": "Rate",
             "field": "Rate",
-            "footerFormatter": "totalFormatter"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
             "title": "R DC #",
