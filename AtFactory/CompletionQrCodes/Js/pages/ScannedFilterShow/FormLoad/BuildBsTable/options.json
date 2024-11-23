@@ -9,6 +9,7 @@
     "queryParams": "",
     "rowStyle": "",
     "pagination":"true",
+    "filterControl": true,
     "columns": [
         {
             "field": "KS-Serial",
@@ -17,7 +18,8 @@
         },
         {
             "field": "OrderNumber",
-            "title": "Order #"
+            "title": "Order #",
+            "filterControl": "select"
         },
         {
             "field": "OrderDate",
@@ -46,7 +48,7 @@
         {
             "field": "VoucherNumber",
             "title": "DC #",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "DC Date",
@@ -60,12 +62,12 @@
         {
             "title": "BranchName",
             "field": "BranchName",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "Return",
             "field": "EntryReturnStarus",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "title": "TimeSpan",
