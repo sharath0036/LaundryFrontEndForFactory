@@ -5,6 +5,7 @@
     "searchHighlight": true,
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
+    "pagination":"true",
     "data": [],
     "onClickRow": "",
     "url": "/binV4/FactoryOut_DC/Show/Filter/RefDC/$RefDCValue",

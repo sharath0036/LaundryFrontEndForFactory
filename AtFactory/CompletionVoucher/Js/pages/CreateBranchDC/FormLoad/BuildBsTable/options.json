@@ -8,6 +8,7 @@
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
+    "pagination":"true",
     "url": "/Custom/Clients/Laundry/Factory/Outward/Scan/Voucher/$FactoryName",
     "columns": [
         {
