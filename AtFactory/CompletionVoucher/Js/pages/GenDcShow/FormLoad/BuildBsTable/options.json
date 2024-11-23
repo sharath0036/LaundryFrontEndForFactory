@@ -24,6 +24,14 @@
             "title": "RefDC "
         },
         {
+            "field": "DateTime",
+            "title": "Date "
+        },
+        {
+            "field": "QrCount",
+            "title": "QrCount "
+        },
+        {
             "field": "BranchName",
             "title": "BranchName",
             "formatter":""

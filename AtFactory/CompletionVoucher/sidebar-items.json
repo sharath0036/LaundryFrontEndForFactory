@@ -1,6 +1,6 @@
 [
   {
-    "name": "CompletionVoucher",
+    "name": "---CompletionVoucher---",
     "isTitle": true
   },
   {
@@ -33,22 +33,18 @@
   {
     "name": "GenerateDC",
     "key": "Generate",
-    "icon": "stack",
+    "icon": "bi bi-file-earmark-plus-fill",
     "submenu": [
       {
         "name": "GenerateDC",
         "url": "GenerateCreateBranchDC.html"
-      },
-      {
-        "name": "Show",
-        "url": "GenerateAllShowAll.html"
       }
     ]
   },
   {
     "name": "Status",
     "key": "Status",
-    "icon": "stack",
+    "icon": "bi bi-check-circle-fill",
     "submenu": [
       {
         "name": "DC",
