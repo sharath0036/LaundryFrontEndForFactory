@@ -54,16 +54,6 @@
             "filterControl": "select"
         },
         {
-            "title": "ReWash",
-            "field": "ReWashStatus",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "ReturnStatus",
-            "filterControl": "select"
-        },
-        {
             "title": "GenSpan",
             "field": "TimeSpan"
         }

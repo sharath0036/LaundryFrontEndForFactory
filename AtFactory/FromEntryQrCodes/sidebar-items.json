@@ -10,7 +10,7 @@
   },
   {
     "name": "All",
-    "key": "QRShow",
+    "key": "All",
     "icon": "bi bi-list-ul",
     "submenu": [
       {
@@ -44,7 +44,7 @@
   },
   {
     "name": "Scanned",
-    "key": "Completed",
+    "key": "Scanned",
     "icon": "bi bi-check-circle",
     "submenu": [
       {

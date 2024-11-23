@@ -8,7 +8,7 @@
     "pagination":"true",
     "data": [],
     "onClickRow": "",
-    "url": "/binV4/FactoryOut_DC/Show/Filter/RefDC/$RefDCValue",
+    "url": "/Custom/Cleaning/Factory/V1/Outward/ToBranch/Voucher/$RefDCValue",
     "columns": [
         {
             "field": "KS-Serial",
