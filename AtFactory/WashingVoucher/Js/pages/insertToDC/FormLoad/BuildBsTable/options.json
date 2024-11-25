@@ -5,6 +5,7 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
+    "pagination":"true",
     "responseHandler": "responseHandler",
     "pagination":"true",
     "queryParams": "queryParams",

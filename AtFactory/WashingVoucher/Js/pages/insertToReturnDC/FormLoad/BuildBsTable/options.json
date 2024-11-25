@@ -5,6 +5,7 @@
     "searchHighlight": true,
     "data": [],
     "onClickRow": "",
+    
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
