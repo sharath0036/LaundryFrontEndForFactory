@@ -18,6 +18,11 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
+            "title": "QrCode",
+            "field": "QrCodeId",
+            "filtercontrol": "select"
+        },
+        {
             "title": "Order #",
             "field": "OrderNumber",
             "filterControl": "select"
@@ -30,11 +35,7 @@
             "title": "Delivery Date",
             "field": "DeliveryDate"
         },
-        {
-            "title": "QrCode",
-            "field": "QrCodeId",
-            "filtercontrol": "select"
-        },
+       
         {
             "title": "ItemName",
             "field": "ItemName",
