@@ -12,7 +12,7 @@
     "rowStyle": "rowStyle",
     "filterControl":true,
     "pagination":"true",
-    "url": "/Custom/Clients/Laundry/Factory/Inward/Scan/Voucher/QrStatus/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Inward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
