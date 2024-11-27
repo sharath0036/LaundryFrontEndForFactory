@@ -8,12 +8,17 @@
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "",
-    "pagination":"true",
+    "pagination": "true",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
             "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode",
+            "filtercontrol": "select"
         },
         {
             "field": "OrderNumber",
@@ -28,11 +33,6 @@
             "title": "Delivery Date"
         },
         {
-            "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
-        },
-        {
             "field": "ItemName",
             "title": "ItemName",
             "filtercontrol": "select"
@@ -40,7 +40,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "footerFormatter":"jVarLocalFormatterFunc"
+            "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
             "field": "VoucherNumber",
