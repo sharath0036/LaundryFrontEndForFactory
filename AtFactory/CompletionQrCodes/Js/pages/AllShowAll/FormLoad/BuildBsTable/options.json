@@ -8,13 +8,18 @@
     "responseHandler": "",
     "queryParams": "",
     "pagination": "true",
-    "pageList":"[5,10, 25, 50, 100, all]",
+    "pageList": "[5,10, 25, 50, 100, all]",
     "rowStyle": "rowStyle",
     "columns": [
         {
             "field": "KS-Serial",
             "title": "#",
             "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "QrCodeId",
+            "title": "QrCode",
+            "filtercontrol": "select"
         },
         {
             "field": "OrderNumber",
@@ -27,11 +32,6 @@
         {
             "field": "DeliveryDate",
             "title": "Delivery Date"
-        },
-        {
-            "field": "QrCodeId",
-            "title": "QrCode",
-            "filtercontrol": "select"
         },
         {
             "field": "ItemName",
