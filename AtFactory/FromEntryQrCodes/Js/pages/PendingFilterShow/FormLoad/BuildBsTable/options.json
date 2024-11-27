@@ -17,6 +17,11 @@
             "formatter": ""
         },
         {
+            "field": "QrCodeId",
+            "title": "QrCode",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #",
             "filterControl": "select"
@@ -29,11 +34,7 @@
             "field": "DeliveryDate",
             "title": "Delivery Date"
         },
-        {
-            "field": "QrCodeId",
-            "title": "QrCode",
-            "filterControl": "select"
-        },
+      
         {
             "field": "ItemName",
             "title": "ItemName",
