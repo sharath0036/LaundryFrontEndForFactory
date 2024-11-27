@@ -1,7 +1,7 @@
 import UrlJson from './url.json' with {type: 'json'};
 
-let StartFunc = () => {
-    window.location.href = `./${UrlJson.RedirectToUrl}`;
+let StartFunc = ({ inrowData }) => {
+    window.location.href = `./${UrlJson.RedirectToUrl}?RefDC=${inrowData.pk}`;
 };
 
 export { StartFunc };

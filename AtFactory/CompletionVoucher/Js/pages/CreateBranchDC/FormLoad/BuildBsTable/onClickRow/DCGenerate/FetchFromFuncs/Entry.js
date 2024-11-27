@@ -6,7 +6,7 @@ let StartFunc = async ({ inrowData }) => {
     let jVarLocalDataNeeded = await StartFuncFetchFuncs({ inrowData });
 
     if (jVarLocalDataNeeded.status === 200) {
-        StartFuncAfterFetch();
+        StartFuncAfterFetch({ inrowData });
     };
 };
 
