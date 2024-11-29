@@ -11,7 +11,6 @@
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
     "filterControl":true,
-    "pagination":"true",
     "url": "/Custom/Cleaning/Factory/V1/Inward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
@@ -69,7 +68,8 @@
         },
         {
             "title": "EntryCancel",
-            "field": "EntryCancel"
+            "field": "EntryCancel",
+            "footerFormatter": ""
         }
     ]
 }
