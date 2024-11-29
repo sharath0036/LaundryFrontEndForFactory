@@ -11,4 +11,4 @@ const StartFunc = () => {
     };
 };
 
-export { StartFunc };
+StartFunc();
