@@ -5,7 +5,9 @@ let StartFunc = ({ inFindColumn }) => {
 };
 function ItemsFormatter(value, row, index) {
     let jVarLocalBranchName = getUrlQueryParams1({ inGetKey: "BranchName" });
-
+    if (row.scanned === 0) {
+        return row.scanned
+    } else {
     // console.log("row:", row);
     return [
         `<a class="like btn btn-success" href="./ShowDCItems.html?VoucherRef=${row.pk}" title="Show">`,
@@ -18,6 +20,7 @@ function ItemsFormatter(value, row, index) {
         '</a>',
 
     ].join('')
+    }
 
 };
 
