@@ -47,7 +47,7 @@
             "title": "Rate",
             "field": "Rate",
             "filtercontrol": "select",
-            "footerFormatter":"totalFormatter"
+            "footerFormatter":"priceFormatter"
         },
         {
             "title":"Description",

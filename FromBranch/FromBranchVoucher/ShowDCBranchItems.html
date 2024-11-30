@@ -134,19 +134,14 @@
     function jFOrderDate(value, row, index) {
         return new Date(row.OrderDate).toLocaleDateString('en-GB')
     };
-    function totalFormatter(data) {
-        var field = this.field;
-        let LocalTotal = data.map(function (row) {
-            if (row[field] === undefined) {
-                return 0;
-            };
-            return +row[field];
-        }).reduce(function (sum, i) {
-            return sum + i
-        }, 0);
-
-        return LocalTotal.toFixed(2);
-    };
+    function priceFormatter(data) {
+            var field = this.field
+            return '₹ ' + data.map(function (row) {
+                return +row.Rate
+            }).reduce(function (sum, i) {
+                return sum + i
+            }, 0)
+        }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
