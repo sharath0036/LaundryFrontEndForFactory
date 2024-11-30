@@ -63,7 +63,7 @@
         },
         {
             "title": "Return",
-            "field": "ReturnStatus",
+            "field": "EntryReturnStarus",
             "filterControl": "select"
         },
         {
