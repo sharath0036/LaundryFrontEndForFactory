@@ -13,7 +13,7 @@ let StartFunc = ({ inDataToShow }) => {
     jFLocalToInputDescriptionTextDCDetailsId({ inDescriptionTextDCDetailsId: jVarLocalData.Description });
     jFLocalToInputDCFactoryDCDetailsTextId({ inDCFactoryDCDetailsTextId: jVarLocalData.Factory });
     jFLocalToInputDCBranchNameDCDetailsTextId({ inDCBranchNameDCDetailsTextId: jVarLocalData.BranchName });
-    jFLocalDCBranchNameId({InValue:jVarLocalData.BranchName})
+    jFLocalDCBranchNameId({InValue:jVarLocalData.Branch})
 };
 
 let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {
