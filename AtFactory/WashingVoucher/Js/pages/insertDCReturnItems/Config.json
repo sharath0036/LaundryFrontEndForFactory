@@ -1,5 +1,5 @@
 {
-    "GetUrl": "/Custom/Clients/Laundry/Factory/Process/Washing/Return/QrCode/RowData",
+    "GetUrl": "/Custom/Cleaning/Factory/V1/Process/Washing/Return/QrCode/RowData",
     "PostUrl": "/Custom/Clients/Laundry/Factory/Process/Washing/Return/QrCode",
     "FormLoad": {
         "DcDetails": {
