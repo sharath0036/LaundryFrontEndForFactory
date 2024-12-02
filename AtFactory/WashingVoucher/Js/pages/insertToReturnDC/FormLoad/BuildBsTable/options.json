@@ -10,7 +10,7 @@
     "pagination":"true",
     "pageList":"[5,10, 25, 50, 100, all]",
     "rowStyle": "rowStyle",
-    "url": "/Custom/Clients/Laundry/Factory/Process/Washing/Return/Voucher/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Process/Washing/Return/Voucher/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
