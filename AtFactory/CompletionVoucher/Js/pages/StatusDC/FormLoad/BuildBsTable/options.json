@@ -10,7 +10,7 @@
     "pagination":"true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",   
-    "url": "/Custom/Clients/Laundry/Factory/Outward/Scan/Voucher/QrStatus/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Outward/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
