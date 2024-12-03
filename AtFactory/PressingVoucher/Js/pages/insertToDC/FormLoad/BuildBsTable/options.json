@@ -12,7 +12,7 @@
     "pageSize": "5",
    
     "rowStyle": "rowStyle",
-    "url": "/Custom/Clients/Laundry/Factory/Process/Pressing/Scan/Voucher/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Scan/Voucher/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
