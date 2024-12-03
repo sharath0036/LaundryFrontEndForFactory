@@ -7,7 +7,9 @@
     "onClickRow": "",
     "responseHandler": "responseHandler",
     "pagination":"true",
-    "pageList":"[5,10, 25, 50, 100, all]",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
     "url": "/Custom/Cleaning/Factory/V1/Process/Washing/Scan/Voucher/$FactoryName",
