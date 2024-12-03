@@ -14,13 +14,19 @@ let jFLocalToInputFactoryName = (inValue) => {
 };
 
 let jFLocalToInputDate = () => {
-    const today = new Date();
-    const formattedDate = today.toISOString().split('T')[0];
-    let jVarLocalHtmlId = 'Date';
-    let jVarLocalDate = document.getElementById(jVarLocalHtmlId);
+    
+    
+    var today = new Date(); 
+    today.setDate(today.getDate());
+    var dd = String(today.getDate()).padStart(2, '0'); 
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+    var yyyy = today.getFullYear(); 
+    var nextWeek=yyyy + '-' + mm + '-' + dd; 
+    var dateInput=document.getElementById("Date");
+    dateInput.value=nextWeek;
+    dateInput.setAttribute("min",nextWeek);
+    
+    
 
-    if (jVarLocalDate === null === false) {
-        jVarLocalDate.value = formattedDate;
-    };
 };
 export { StartFunc }

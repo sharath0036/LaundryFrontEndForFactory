@@ -8,7 +8,8 @@
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "rowStyle",
-    "pageList":"[5,10, 25, 50, 100, all]",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",  
     "pagination":"true",
     "columns": [
         {
@@ -42,6 +43,7 @@
         {
             "title": "Rate",
             "field": "Rate",
+            "align":"right",
             "filtercontrol": "select"
         },
         {
