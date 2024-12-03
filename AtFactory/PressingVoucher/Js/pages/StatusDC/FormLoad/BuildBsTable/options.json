@@ -11,7 +11,7 @@
    
     "data": [],
     "onClickRow": "",
-    "url": "/Custom/Clients/Laundry/Factory/Process/Pressing/Scan/Voucher/QrStatus/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Scan/Voucher/QrStatus/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
