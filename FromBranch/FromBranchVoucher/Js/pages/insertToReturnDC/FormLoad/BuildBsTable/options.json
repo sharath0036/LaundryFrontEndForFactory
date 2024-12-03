@@ -11,7 +11,7 @@
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
     "rowStyle": "rowStyle",
-    "url": "/Custom/Clients/Laundry/Factory/Inward/Return/Voucher/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Inward/Return/Voucher/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
