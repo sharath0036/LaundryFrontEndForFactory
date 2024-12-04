@@ -1,9 +1,9 @@
-import { StartFunc as StartFuncForResponse500 } from "./ForResponse500.js";
+import { StartFunc as StartFuncForResponse500 } from "./ForResponse400.js";
 import { StartFunc as StartFuncForResponse200 } from "./ForResponse200/entryFile.js";
 
 let StartFunc = async ({ inFetchResonse }) => {
 
-    if (inFetchResonse.status === 500) {
+    if (inFetchResonse.status === 400) {
         return await StartFuncForResponse500({ inFetchResonse });
     };
     

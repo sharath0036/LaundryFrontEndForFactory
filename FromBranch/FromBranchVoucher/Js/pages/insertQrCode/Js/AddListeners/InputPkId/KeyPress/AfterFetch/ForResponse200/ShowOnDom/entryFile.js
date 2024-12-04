@@ -2,24 +2,13 @@ import { StartFunc as InputValues } from "./InputValues.js";
 
 let StartFunc = ({ inFromFetch }) => {
     let jVarLocalFetchData = inFromFetch;
-    if (jVarLocalFetchData.KTF === true) {
+    
         jFLocalToInputAlertSuccessIdUserName(jVarLocalFetchData.ScanNo);
         jFLocalToInputInputPkId("");
         JFlocalShowAlertFunc();
         jFLocalToInputRowCountId(jVarLocalFetchData.QrCount)
         InputValues({ inFetchResonse: jVarLocalFetchData.QrData });
         InputPkId()
-    } else {
-        Swal.fire({
-            icon: 'error',
-            title: `${jVarLocalFetchData.KReason}`,
-            confirmButtonText: "ok",
-        }).then((result) => {
-            if (result.isConfirmed) {
-                InputPkId();
-            };
-        });
-    }
 };
 
 let jFLocalToInputAlertSuccessIdUserName = (inValue) => {
