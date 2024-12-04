@@ -7,11 +7,11 @@ import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
     let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial")
-    let LocalColumnStatus = LocalColumns.find(element => element.field === "Status");
     let LocalColumnReWash = LocalColumns.find(element => element.field === "ReWashStatus");
     let LocalColumnReturn = LocalColumns.find(element => element.field === "EntryReturnStarus");
+    let LocalColumnStatus = LocalColumns.find(element => element.field === "Status");
     let LocalColumnRate = LocalColumns.find(element => element.field === "Rate");
-
+    
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
     };
