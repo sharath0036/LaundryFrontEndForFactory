@@ -1,0 +1,12 @@
+{
+    "GetUrl": "/Custom/Cleaning/Factory/V1/Process/Pressing/ReWash/QrCode/RowQrData",
+    "PostUrl": "/Custom/Cleaning/Factory/V1/Process/Pressing/ReWash/QrCode",
+    "FormLoad": {
+        "DcDetails": {
+            "GetUrl": "/binV4/ReWashDC/Show"
+        },
+        "DcCount": {
+            "GetUrl": "/Custom/Cleaning/Factory/V1/Process/Pressing/ReWash/QrCode/RowCount"
+        }
+    }
+}

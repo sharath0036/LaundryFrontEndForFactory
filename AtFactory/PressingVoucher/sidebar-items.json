@@ -20,6 +20,10 @@
       {
         "name": "Return-DC",
         "url": "createReturnDC.html"
+      },
+      {
+        "name": "Rewash-DC",
+        "url": "createReWashDC.html"
       }
     ]
   },
@@ -35,6 +39,10 @@
       {
         "name": "ToReturn-DC",
         "url": "insertToReturnDC.html"
+      },
+      {
+        "name": "ToRewash-DC",
+        "url": "insertToRewashDC.html"
       }
     ]
   },
