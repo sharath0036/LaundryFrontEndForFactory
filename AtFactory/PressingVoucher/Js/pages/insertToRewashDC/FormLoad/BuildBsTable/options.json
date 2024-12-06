@@ -1,0 +1,48 @@
+{
+    "idfield": "pk",
+    "showFooter": "true",
+    "search": true,
+    "searchHighlight": true,
+    "data": [],
+    "onClickRow": "",
+    "responseHandler": "responseHandler",
+    "queryParams": "queryParams",
+    "pagination":"true",
+    "pageList": "[5, 10, 25 ]",
+    "pageSize": "5",
+   
+    "rowStyle": "rowStyle",
+    "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Rewash/Voucher/$FactoryName",
+    "columns": [
+        {
+            "field": "KS-Serial",
+            "title": "#",
+            "formatter": "jFLocalSerialColumn"
+        },
+        {
+            "field": "pk",
+            "title": "DC",
+            "filtercontrol": "input"
+        },
+        {
+            "field": "Date",
+            "title": "Date",
+            "filtercontrol": "select"
+        },
+        {
+            "field": "Description",
+            "title": "Description",
+            "filtercontrol": "select"
+        },
+        {
+            "title": "Items",
+            "formatter": "ItemsFormatter",
+            "footerFormatter": "priceFormatter"
+        },
+        {
+            "title": "Scan",
+            "field": "operate",
+            "formatter": ""
+        }
+    ]
+}
