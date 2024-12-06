@@ -20,6 +20,17 @@
     ]
   },
   {
+    "name": "VerticalShow",
+    "key": "DC",
+    "icon": "bi bi-table",
+    "submenu": [
+      {
+        "name": "DCItems",
+        "url": "DCItems.html"
+      }
+    ]
+  },
+  {
     "name": "Insert",
     "key": "insert",
     "icon": "stack",
