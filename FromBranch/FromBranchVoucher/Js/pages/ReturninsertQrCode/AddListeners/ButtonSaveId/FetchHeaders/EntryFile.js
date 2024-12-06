@@ -14,7 +14,7 @@ let StartFunc = () => {
     inDataToInsert.InSertObject.FactorySelected = jFLocalFromDomInputFactorySelectedId();
     inDataToInsert.InSertObject.VoucherRef = jFLocalFromDomInputVoucherRefId();
     inDataToInsert.InSertObject.BranchName = jFLocalFromDomInputBranchNameId();
-    inDataToInsert.InSertObject.VoucherNumber = jFLocalFromDomVoucherNumberTextId();
+    inDataToInsert.InSertObject.VoucherNumber = getUrlQueryParams({ inGetKey: "VoucherRef" });
     inDataToInsert.InSertObject.DCFactory = jFLocalFromDomDCFactoryTextId();
     inDataToInsert.InSertObject.DCDate = jFLocalFromDomDateTextId();
     inDataToInsert.InSertObject.DCDescription = jFLocalFromDomDescriptionTextId();
@@ -50,9 +50,9 @@ let jFLocalFromDomInputSalePriceId = () => {
 };
 
 let jFLocalFromDomInputVoucherRefId = () => {
-    let jVarLocalHtmlInputVoucherRefId = 'InputVoucherRefId';
+    let jVarLocalHtmlInputVoucherRefId = 'VoucherNumberDCDetailsTextId';
     let jVarHtmlInputVoucherRefId = document.getElementById(jVarLocalHtmlInputVoucherRefId);
-    let jVarHtmlInputVoucherRefIdValue = jVarHtmlInputVoucherRefId.value.trim();
+    let jVarHtmlInputVoucherRefIdValue = parseInt(jVarHtmlInputVoucherRefId.innerHTML.trim());
     return jVarHtmlInputVoucherRefIdValue;
 };
 
@@ -63,12 +63,6 @@ let jFLocalFromDomInputBranchNameId = () => {
     return jVarHtmlInputBranchNameIdValue;
 };
 
-let jFLocalFromDomVoucherNumberTextId = () => {
-    let jVarLocalHtmlVoucherNumberTextId = 'VoucherNumberTextId';
-    let jVarHtmlVoucherNumberTextId = document.getElementById(jVarLocalHtmlVoucherNumberTextId);
-    let jVarHtmlVoucherNumberTextIdValue = jVarHtmlVoucherNumberTextId.value.trim();
-    return jVarHtmlVoucherNumberTextIdValue;
-};
 
 let jFLocalFromDomInputFactorySelectedId = () => {
     let jVarLocalHtmlInputFactorySelectedId = 'InputFactorySelectedId';
@@ -123,7 +117,15 @@ let jFLocalDescription = () => {
     let jVarLocalHtmlId = document.getElementById(jVarLocalDescription);
 
     if (jVarLocalHtmlId === null === false) {
-    return jVarLocalHtmlId.value.trim();
+        return jVarLocalHtmlId.value.trim();
     };
+};
+
+
+let getUrlQueryParams = ({ inGetKey }) => {
+    const queryString = window.location.search;
+    const parameters = new URLSearchParams(queryString);
+    const value = parameters.get(inGetKey);
+    return value;
 };
 export { StartFunc }
