@@ -1,8 +1,7 @@
 // import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
 // import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
-import { StartFunc as BranchName } from "./BranchName/entryFile.js";
-
-
+// import { StartFunc as BranchName } from "./BranchName/entryFile.js";
+import { StartFunc as QrCount } from "./QrCount/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -17,11 +16,18 @@ let StartFunc = ({ inColumns }) => {
     //     ColumnRate({ inFindColumn: LocalColumnRate });
     // };
 
-    let LocalBranchName = LocalColumns.find(element => element.field === "BranchName");
+    // let LocalBranchName = LocalColumns.find(element => element.field === "BranchName");
 
-    if (LocalBranchName === undefined === false) {
-        BranchName({ inFindColumn: LocalBranchName });
+    // if (LocalBranchName === undefined === false) {
+    //     BranchName({ inFindColumn: LocalBranchName });
+    // };
+
+    let LocalQrCount = LocalColumns.find(element => element.field === "QrCount");
+
+    if (LocalQrCount === undefined === false) {
+        QrCount({ inFindColumn: LocalQrCount });
     };
+
 };
 
 export { StartFunc };

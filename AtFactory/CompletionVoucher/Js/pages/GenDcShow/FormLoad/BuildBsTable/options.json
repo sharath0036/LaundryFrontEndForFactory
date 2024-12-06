@@ -5,9 +5,9 @@
     "searchHighlight": true,
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
-    "pagination":"true",
+    "pagination": "true",
     "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",   
+    "pageSize": "5",
     "data": [],
     "onClickRow": "",
     "url": "/Custom/Cleaning/Factory/V1/Outward/ToBranch/Voucher/$RefDCValue/$FactoryName",
@@ -30,13 +30,13 @@
             "title": "Date "
         },
         {
-            "field": "QrCount",
-            "title": "QrCount "
+            "field": "BranchName",
+            "title": "BranchName"
         },
         {
-            "field": "BranchName",
-            "title": "BranchName",
-            "formatter":""
+            "field": "QrCount",
+            "title": "QrCount ",
+            "formatter": ""
         }
     ]
 }
