@@ -40,7 +40,8 @@
         {
             "title": "DCGenerate",
             "field": "operate",
-            "formatter": ""
+            "formatter": "",
+            "align":"center"
         },
         {
             "title": "Show",
