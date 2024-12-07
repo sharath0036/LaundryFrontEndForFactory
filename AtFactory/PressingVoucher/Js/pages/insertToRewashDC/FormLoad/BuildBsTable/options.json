@@ -12,7 +12,7 @@
     "pageSize": "5",
    
     "rowStyle": "rowStyle",
-    "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Rewash/Voucher/$FactoryName",
+    "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/ReWash/Voucher/$FactoryName",
     "columns": [
         {
             "field": "KS-Serial",
