@@ -9,7 +9,7 @@
     "queryParams": "",
     "pagination": "true",
     "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",   
+    "pageSize": "5",
     "rowStyle": "rowStyle",
     "columns": [
         {
@@ -33,7 +33,6 @@
             "field": "DeliveryDate",
             "title": "Delivery Date"
         },
-       
         {
             "field": "ItemName",
             "title": "ItemName"
@@ -41,7 +40,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "align":"right",
+            "align": "right",
             "footerFormatter": ""
         },
         {
@@ -52,11 +51,6 @@
         {
             "title": "Status",
             "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "ReWash",
-            "field": "ReWashStatus",
             "filterControl": "select"
         },
         {

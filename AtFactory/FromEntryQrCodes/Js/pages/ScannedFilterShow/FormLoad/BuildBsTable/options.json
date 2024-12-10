@@ -8,10 +8,9 @@
     "responseHandler": "",
     "queryParams": "",
     "rowStyle": "",
-    "pagination":"true",
+    "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
     "filterControl": true,
     "columns": [
         {
@@ -37,7 +36,6 @@
             "field": "DeliveryDate",
             "title": "Delivery Date"
         },
-      
         {
             "field": "ItemName",
             "title": "ItemName",
@@ -46,7 +44,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "align":"right",
+            "align": "right",
             "filtercontrol": "select",
             "footerFormatter": ""
         },
@@ -61,18 +59,8 @@
             "filtercontrol": "select"
         },
         {
-            "title": "ReWash",
-            "field": "ReWashStatus",
-            "filterControl": "select"
-        },
-        {
             "title": "BranchName",
             "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStarus",
             "filterControl": "select"
         },
         {

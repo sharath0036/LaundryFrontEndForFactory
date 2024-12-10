@@ -64,7 +64,7 @@
         },
         {
             "title": "Return",
-            "field": "EntryReturnStatus"
+            "field": "EntryReturnStarus"
             
         },
         {

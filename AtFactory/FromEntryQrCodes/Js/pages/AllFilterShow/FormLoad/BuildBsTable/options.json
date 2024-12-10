@@ -31,13 +31,12 @@
         },
         {
             "field": "OrderDate",
-            "title": "Order +Date"
+            "title": "Order Date"
         },
         {
             "field": "DeliveryDate",
-            "title": "Deliver+y Date"
+            "title": "Delivery Date"
         },
-       
         {
             "field": "ItemName",
             "title": "ItemName"
@@ -45,7 +44,7 @@
         {
             "field": "Rate",
             "title": "Rate",
-            "align":"right",
+            "align": "right",
             "footerFormatter": ""
         },
         {
@@ -56,16 +55,6 @@
         {
             "title": "Status",
             "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "title": "ReWash",
-            "field": "ReWashStatus",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStarus",
             "filterControl": "select"
         },
         {
