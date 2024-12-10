@@ -50,7 +50,8 @@
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber"
+            "field": "VoucherNumber",
+            "filterControl": "select"
         },
         {
             "title": "R DCDate",

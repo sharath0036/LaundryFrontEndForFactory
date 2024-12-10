@@ -50,7 +50,7 @@
             "formatter": ""
         },
         {
-            "title": "Sent From Branch",
+            "title": "FromBranch",
             "formatter": "",
             "field": "Sent",
             "footerFormatter": ""
