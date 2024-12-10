@@ -5,11 +5,10 @@
     "searchHighlight": true,
     "responseHandler": "responseHandler",
     "queryParams": "queryParams",
-    "pagination":"true",
+    "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
-    "filtercontrol":true,
+    "filtercontrol": true,
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -38,6 +37,10 @@
             "filtercontrol": "select"
         },
         {
+            "title": "Description",
+            "field": "Description"
+        },
+        {
             "field": "BranchName",
             "title": "Branch Name",
             "filtercontrol": "select"
@@ -50,14 +53,14 @@
         {
             "title": "Rate",
             "field": "Rate",
-            "align":"right",
+            "align": "right",
             "filtercontrol": "select",
-            "footerFormatter":"totalFormatter"
+            "footerFormatter": "totalFormatter"
         },
         {
-            "title":"ReWash",
-            "field":"ReWash",
-            "filtercontrol":"select"
+            "title": "ReWash",
+            "field": "ReWash",
+            "filtercontrol": "select"
         },
         {
             "title": "Time Span",
