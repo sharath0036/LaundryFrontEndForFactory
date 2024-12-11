@@ -35,12 +35,6 @@
             "footerFormatter": "totalFormatter"
         },
         {
-            "field": "WashCancel",
-            "title": "Cancel",
-            "align": "right",
-            "footerFormatter": "totalFormatter"
-        },
-        {
             "field": "ReWash",
             "title": "ReWash",
             "align": "right",

@@ -49,7 +49,7 @@
   {
     "name": "Status",
     "key": "Status",
-    "icon": "stack",
+    "icon": "bi bi-receipt-cutoff",
     "submenu": [
       {
         "name": "DC",
