@@ -58,6 +58,11 @@
             "filterControl": "select"
         },
         {
+            "field": "",
+            "title": "Rewash",
+            "footerFormatter": ""
+        },
+        {
             "title": "Return",
             "field": "EntryReturnStatus",
             "filterControl": "select"
@@ -66,5 +71,6 @@
             "title": "GenSpan",
             "field": "TimeSpan"
         }
+
     ]
 }

@@ -49,7 +49,7 @@
         "url": "CompletedQr.html"
       },
       {
-        "name": "CompletedFilter",
+        "name": "ScannedFilter",
         "url": "CompletedQrFilter.html"
       }
     ]

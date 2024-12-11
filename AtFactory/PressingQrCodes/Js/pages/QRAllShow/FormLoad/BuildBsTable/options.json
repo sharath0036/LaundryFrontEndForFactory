@@ -57,6 +57,11 @@
             "filterControl": "select"
         },
         {
+            "field": "",
+            "title": "Rewash",
+            "footerFormatter": "totalFormatter"
+        },
+        {
             "title": "Return",
             "field": "EntryReturnStatus",
             "filterControl": "select"
