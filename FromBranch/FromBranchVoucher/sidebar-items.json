@@ -40,10 +40,6 @@
     "icon": "stack",
     "submenu": [
       {
-        "name": "ToDC",
-        "url": "insertToDC.html"
-      },
-      {
         "name": "ToReturn-DC",
         "url": "insertToReturnDC.html"
       },
