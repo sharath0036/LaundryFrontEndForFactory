@@ -10,7 +10,7 @@ let StartFunc = () => {
     inDataToInsert.InSertObject = {};
     inDataToInsert.InSertObject.QrCodeId = jFLocalFromDomInputPkId();
     inDataToInsert.InSertObject.ItemName = jFLocalFromDomInputProductNameId();
-    inDataToInsert.InSertObject.Rate = jFLocalFromDomInputSalePriceId();
+    // inDataToInsert.InSertObject.Rate = jFLocalFromDomInputSalePriceId();
     inDataToInsert.InSertObject.FactorySelected = jFLocalFromDomInputFactorySelectedId();
     inDataToInsert.InSertObject.VoucherRef = jFLocalFromDomInputVoucherRefId();
     inDataToInsert.InSertObject.BranchName = jFLocalFromDomInputBranchNameId();
@@ -41,12 +41,12 @@ let jFLocalFromDomInputProductNameId = () => {
     return jVarHtmlInputProductNameIdValue;
 };
 
-let jFLocalFromDomInputSalePriceId = () => {
-    let jVarLocalHtmlInputSalePriceId = 'InputSalePriceId';
-    let jVarHtmlInputSalePriceId = document.getElementById(jVarLocalHtmlInputSalePriceId);
-    let jVarHtmlInputSalePriceIdValue = jVarHtmlInputSalePriceId.value.trim();
-    return jVarHtmlInputSalePriceIdValue;
-};
+// let jFLocalFromDomInputSalePriceId = () => {
+//     let jVarLocalHtmlInputSalePriceId = 'InputSalePriceId';
+//     let jVarHtmlInputSalePriceId = document.getElementById(jVarLocalHtmlInputSalePriceId);
+//     let jVarHtmlInputSalePriceIdValue = jVarHtmlInputSalePriceId.value.trim();
+//     return jVarHtmlInputSalePriceIdValue;
+// };
 
 let jFLocalFromDomInputVoucherRefId = () => {
     let jVarLocalHtmlInputVoucherRefId = 'InputVoucherRefId';
