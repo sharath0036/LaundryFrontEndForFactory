@@ -2,6 +2,7 @@
 // import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
 // import { StartFunc as BranchName } from "./BranchName/entryFile.js";
 import { StartFunc as QrCount } from "./QrCount/entryFile.js";
+import { StartFunc as ColumnPrint } from "./ColumnPrint/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -26,6 +27,12 @@ let StartFunc = ({ inColumns }) => {
 
     if (LocalQrCount === undefined === false) {
         QrCount({ inFindColumn: LocalQrCount });
+    };
+
+    let LocalPrint = LocalColumns.find(element => element.field === "Print");
+
+    if (LocalPrint === undefined === false) {
+        ColumnPrint({ inFindColumn: LocalPrint });
     };
 
 };

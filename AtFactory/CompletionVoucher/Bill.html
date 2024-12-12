@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Ultrawash Bill</title>
+  <style type="text/css">
+    body,
+    td,
+    th {
+      font-family: Verdana, Geneva, sans-serif;
+      font-size: 11px;
+    }
+  </style>
+</head>
+
+<body>
+  <table width="792" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td width="371" valign="top" id="LeftBillId">
+          <table width="100%" border="1" align="left" cellpadding="4" cellspacing="1">
+            <tbody>
+              <!-- <tr>
+                <td height="30" colspan="4" align="center"><strong>Ultra WashTex PVT LTD</strong>
+                  <strong>(<label id="BranchNameId"></label>)</strong>
+                </td>
+              </tr> -->
+
+              <tr>
+                <td colspan="3">S.NO</td>
+                <td colspan="3">Bill.No</td>
+                <td colspan="3">customer</td>
+                <td colspan="3">Bill Date</td>
+                <td colspan="3">Pieces@Garment Details@Service@Remarks@DueDate</td>
+                <td colspan="3">Return</td>
+                <td colspan="3">ReWash</td>
+                <td colspan="3">Other Remarks</td>
+              </tr>
+
+              <tr>
+                <td align="right" colspan="3">Grand Total &nbsp;</td>
+                <td align="center"><label id="GrandTotalid">Grand Total:</label></td>
+              </tr>
+
+            </tbody>
+          </table>
+        </td>
+        <td width="371" align="center" valign="top" id="RightBillId">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <template id="TemplateForTableRowId">
+    <tr>
+      <td align="left">
+        1
+      </td>
+      <td align="right">
+        2
+      </td>
+      <td align="right">
+        3
+      </td>
+      <td>
+        4
+      </td>
+    </tr>
+  </template>
+
+  <script>
+
+
+    let jVarLocalHbsTemplateForTable = document.getElementById("HbsTemplateForTable");
+
+    Handlebars.registerHelper('ForSNo', function (item) {
+      return item + 1;
+    });
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script type="module" src="./Js/pages/Bill/BillPrint.js"></script>
+</body>
+
+</html>
