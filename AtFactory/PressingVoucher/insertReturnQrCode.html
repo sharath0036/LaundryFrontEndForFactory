@@ -125,18 +125,14 @@
                                 </div>
                             </div>
 
-                            <!-- <div class="mb-3">
-                    <label for="InputPkId" class="form-label fs-3 ">QrCode</label>
-                    <input type="text" class="form-control-lg" id="InputPkId" placeholder="Scan QrCode" autofocus="">
-                </div> -->
                             <div class="mb-3">
                                 <label for="InputProductNameId" class="form-label">Item Name</label>
                                 <input type="text" class="form-control" id="InputProductNameId" readonly>
                             </div>
-                            <!-- <div class="mb-3">
+                            <div class="mb-3">
                                 <label for="InputSalePriceId" class="form-label">Rate</label>
                                 <input type="text" class="form-control" id="InputSalePriceId" readonly>
-                            </div> -->
+                            </div>
 
                             <div class="mb-3 d-none">
                                 <label for="InputFactorySelectedId" class="form-label">Factory Selected</label>
@@ -197,11 +193,13 @@
                                 <label class="form-label">Select Service</label>
                                 <div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="serviceType" id="ReWashRadio" value="Washing">
+                                        <input class="form-check-input" type="radio" name="serviceType"
+                                            id="WashReturnRadio" value="Washing">
                                         <label class="form-check-label" for="WashingRadio">Washing</label>
                                     </div>
                                     <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="serviceType" id="PressingRadio" value="Pressing">
+                                        <input class="form-check-input" type="radio" name="serviceType"
+                                            id="PressingReturnRadio" value="Pressing">
                                         <label class="form-check-label" for="PressingRadio">Pressing</label>
                                     </div>
                                 </div>
@@ -241,6 +239,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- <script src="./Js/pages/insertReturnQrCode/entryFile.js" type="module"></script> -->
     <script src="./Js/pages/insertReturnQrCode/entryFile.js" type="module"></script>
 </body>
 
