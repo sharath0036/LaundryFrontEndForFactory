@@ -38,6 +38,11 @@
             "title": "QrCount ",
             "formatter": "",
             "footerFormatter": ""
+        },
+        {
+            "field": "Print",
+            "title": "Print",
+            "formatter": ""
         }
     ]
 }
