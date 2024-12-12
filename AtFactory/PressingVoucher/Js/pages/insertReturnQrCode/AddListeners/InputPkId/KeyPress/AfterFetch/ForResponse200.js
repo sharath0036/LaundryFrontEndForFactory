@@ -1,5 +1,6 @@
 let StartFunc = async ({ inFetchResonse }) => {
     let jVarLocalResponseData = await inFetchResonse.json();
+console.log("jVarLocalResponseData:",jVarLocalResponseData);
 
 
     if (Object.values(jVarLocalResponseData).length > 0) {
@@ -14,7 +15,7 @@ let StartFunc = async ({ inFetchResonse }) => {
         jFLocalToInputOrderNumberId({ inInputValue: jVarLocalFetchData.OrderNumber });
         jFLocalToInputOrderDateId({ inInputValue: jVarLocalFetchData.BookingData.OrderData.Currentdateandtime });
         jFLocalToInputDeliveryDateId({ inInputValue: jVarLocalFetchData.DeliveryDateTime });
-        jFLocalRunSaveClick();
+        // jFLocalRunSaveClick();
     };
 };
 

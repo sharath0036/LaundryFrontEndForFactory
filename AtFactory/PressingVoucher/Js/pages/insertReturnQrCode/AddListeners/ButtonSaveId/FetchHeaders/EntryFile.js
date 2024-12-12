@@ -2,28 +2,22 @@ import KeysJson from './Keys.json' with {type: 'json'};
 
 let StartFunc = () => {
     let inDataToInsert = {}
-    inDataToInsert.references = {};
-    // inDataToInsert.references.FilterObject = {};
-    // inDataToInsert.references.FilterObject.VoucherRef = jFLocalFromDomInputVoucherRefId();
-    // inDataToInsert.references.FilterObject.QrCodeId = jFLocalFromDomInputPkId();
+    inDataToInsert.QrCodeId = jFLocalFromDomInputPkId();
+    inDataToInsert.ItemName = jFLocalFromDomInputProductNameId();
+    inDataToInsert.FactorySelected = jFLocalFromDomInputFactorySelectedId();
+    inDataToInsert.VoucherRef = jFLocalFromDomInputVoucherRefId();
+    inDataToInsert.BranchName = jFLocalFromDomInputBranchNameId();
+    inDataToInsert.VoucherNumber = jFLocalFromDomVoucherNumberTextId();
+    inDataToInsert.DCDate = jFLocalFromDomDateTextId();
+    inDataToInsert.DCDescription = jFLocalFromDomDescriptionTextId();
+    inDataToInsert.OrderNumber = jFLocalFromDomOrderNumberId();
+    inDataToInsert.OrderDate = jFLocalFromDomOrderDateId();
+    inDataToInsert.DeliveryDate = jFLocalFromDomDeliveryDateId();
+    inDataToInsert.FactoryName = localStorage.getItem("FactoryName");
+    inDataToInsert.Description = jFLocalDescription();
+    inDataToInsert.Return = jFLocalserviceType();
 
-    inDataToInsert.InSertObject = {};
-    inDataToInsert.InSertObject.QrCodeId = jFLocalFromDomInputPkId();
-    inDataToInsert.InSertObject.ItemName = jFLocalFromDomInputProductNameId();
-    // inDataToInsert.InSertObject.Rate = jFLocalFromDomInputSalePriceId();
-    inDataToInsert.InSertObject.FactorySelected = jFLocalFromDomInputFactorySelectedId();
-    inDataToInsert.InSertObject.VoucherRef = jFLocalFromDomInputVoucherRefId();
-    inDataToInsert.InSertObject.BranchName = jFLocalFromDomInputBranchNameId();
-    inDataToInsert.InSertObject.VoucherNumber = jFLocalFromDomVoucherNumberTextId();
-    inDataToInsert.InSertObject.DCFactory = jFLocalFromDomDCFactoryTextId();
-    inDataToInsert.InSertObject.DCDate = jFLocalFromDomDateTextId();
-    inDataToInsert.InSertObject.DCDescription = jFLocalFromDomDescriptionTextId();
-    inDataToInsert.InSertObject.OrderNumber = jFLocalFromDomOrderNumberId();
-    inDataToInsert.InSertObject.OrderDate = jFLocalFromDomOrderDateId();
-    inDataToInsert.InSertObject.DeliveryDate = jFLocalFromDomDeliveryDateId();
-    inDataToInsert.InSertObject.FactoryName = localStorage.getItem("FactoryName");
-
-    KeysJson.body = JSON.stringify(inDataToInsert.InSertObject);
+    KeysJson.body = JSON.stringify(inDataToInsert);
     return KeysJson;
 };
 
@@ -40,13 +34,6 @@ let jFLocalFromDomInputProductNameId = () => {
     let jVarHtmlInputProductNameIdValue = jVarHtmlInputProductNameId.value.trim();
     return jVarHtmlInputProductNameIdValue;
 };
-
-// let jFLocalFromDomInputSalePriceId = () => {
-//     let jVarLocalHtmlInputSalePriceId = 'InputSalePriceId';
-//     let jVarHtmlInputSalePriceId = document.getElementById(jVarLocalHtmlInputSalePriceId);
-//     let jVarHtmlInputSalePriceIdValue = jVarHtmlInputSalePriceId.value.trim();
-//     return jVarHtmlInputSalePriceIdValue;
-// };
 
 let jFLocalFromDomInputVoucherRefId = () => {
     let jVarLocalHtmlInputVoucherRefId = 'InputVoucherRefId';
@@ -76,12 +63,6 @@ let jFLocalFromDomInputFactorySelectedId = () => {
     return jVarHtmlInputFactorySelectedIdValue;
 };
 
-let jFLocalFromDomDCFactoryTextId = () => {
-    let jVarLocalHtmlDCFactoryTextId = 'DCFactoryTextId';
-    let jVarHtmlDCFactoryTextId = document.getElementById(jVarLocalHtmlDCFactoryTextId);
-    let jVarHtmlDCFactoryTextIdValue = jVarHtmlDCFactoryTextId.value.trim();
-    return jVarHtmlDCFactoryTextIdValue;
-};
 
 let jFLocalFromDomDescriptionTextId = () => {
     let jVarLocalHtmlDescriptionTextId = 'DescriptionTextId';
@@ -117,4 +98,30 @@ let jFLocalFromDomDeliveryDateId = () => {
     let jVarHtmlDeliveryDateIdValue = jVarHtmlDeliveryDateId.value.trim();
     return jVarHtmlDeliveryDateIdValue;
 };
+
+let jFLocalDescription = () => {
+    let jVarLocalDescription = 'Description'
+    let jVarLocalHtmlId = document.getElementById(jVarLocalDescription);
+
+    if (jVarLocalHtmlId === null === false) {
+        return jVarLocalHtmlId.value.trim();
+    };
+};
+
+
+let jFLocalserviceType = () => {
+    let jVarLocalserviceType = 'serviceType'
+    let jVarLocalHtmlId = document.getElementsByName(jVarLocalserviceType);
+    let selectedValue = null;
+    for (const radio of jVarLocalHtmlId) {
+        if (radio.checked) {
+            selectedValue = radio.value;
+            break;
+        }
+    }
+
+    return selectedValue;
+};
+
+// Display the selected value
 export { StartFunc }
