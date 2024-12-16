@@ -50,6 +50,7 @@
             "field": "Rate",
             "filtercontrol": "select",
             "align":"right",
+            "formatter": "symbolFormatPrice",
             "footerFormatter":"totalFormatter"
         },
         {
