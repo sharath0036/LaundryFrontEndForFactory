@@ -1,5 +1,6 @@
 let StartFunc = ({ inFindColumn }) => {
     inFindColumn.footerFormatter = jVarLocalFormatterFunc;
+    inFindColumn.formatter=symbolFormat;
 };
 
 let jVarLocalFormatterFunc = (data) => {
@@ -13,8 +14,13 @@ let jVarLocalFormatterFunc = (data) => {
         return sum + i
     }, 0);
 
-    return Math.floor(LocalTotal);
+    return '₹ '+Math.floor(LocalTotal);
 
 };
+function symbolFormat(data){
+    var field = this.field
+    
+    return '₹ '+data;
+}
 
 export { StartFunc };

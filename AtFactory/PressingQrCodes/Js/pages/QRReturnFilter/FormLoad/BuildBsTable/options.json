@@ -45,6 +45,7 @@
             "title": "Rate",
             "field": "Rate",
             "align":"right",
+            "formatter":"symbolFormat",
             "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
