@@ -42,7 +42,8 @@
         {
             "title": "Rate",
             "field": "Rate",
-            "align":"right"
+            "align":"right",
+            "formatter":"symbolFormat"
         },
         {
             "title": "R DC #",
