@@ -53,6 +53,7 @@
             "title": "Rate",
             "field": "Rate",
             "align":"right",
+            "formatter": "symbolFormatPrice",
             "filtercontrol": "select",
             "footerFormatter":"totalFormatter"
         },
