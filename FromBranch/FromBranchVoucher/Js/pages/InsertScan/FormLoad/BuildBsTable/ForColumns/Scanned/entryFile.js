@@ -4,7 +4,6 @@ let StartFunc = ({ inFindColumn }) => {
     
 };
 function ItemsFormatter(value, row, index) {
-    let jVarLocalBranchName = getUrlQueryParams1({ inGetKey: "BranchName" });
     if (row.scanned === 0) {
         return row.scanned
     } else {
