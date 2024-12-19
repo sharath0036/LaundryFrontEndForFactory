@@ -9,7 +9,7 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination": "true",
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5, 10, 25, 50, 100, All ]",
     "pageSize": "5",
    
     "columns": [
@@ -19,7 +19,7 @@
             "formatter": "jFLocalSerialColumn"
         },
         {
-            "title": "QrCode",
+            "title": "Qr Code",
             "field": "QrCodeId",
             "filtercontrol": "select"
         },
@@ -36,7 +36,7 @@
             "field": "DeliveryDate"
         },
         {
-            "title": "ItemName",
+            "title": "Item Name",
             "field": "ItemName",
             "filtercontrol": "select"
         },
@@ -54,17 +54,17 @@
             "filtercontrol": "select"
         },
         {
-            "title": "R DCDate",
+            "title": "R DC Date",
             "field": "DCDate",
             "filtercontrol": "select"
         },
         {
-            "title": "BranchName",
+            "title": "Branch Name",
             "field": "BranchName",
             "filtercontrol": "select"
         },
         {
-            "title": "GenSpan",
+            "title": "Gen Span",
             "field": "TimeSpan",
             "filtercontrol": "select"
         }

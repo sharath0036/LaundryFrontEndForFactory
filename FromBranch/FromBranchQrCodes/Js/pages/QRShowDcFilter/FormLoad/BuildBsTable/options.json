@@ -10,7 +10,7 @@
     "rowStyle": "rowStyle",
     "pagination": "true",
     "filterControl": true,
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5, 10, 25, 50, 100, All ]",
     "pageSize": "5",
    
     "columns": [
@@ -21,7 +21,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
+            "title": "Qr Code",
             "filterControl": "select"
         },
         {
@@ -39,7 +39,7 @@
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
+            "title": "Item Name",
             "filterControl": "select"
         },
         {
@@ -74,7 +74,7 @@
             "filterControl": "select"
         },
         {
-            "title": "GenSpan",
+            "title": "Gen Span",
             "field": "TimeSpan"
         }
     ]
