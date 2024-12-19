@@ -9,8 +9,8 @@
     "queryParams": "",
     "rowStyle": "rowStyle",
     "pagination":"true",
-    "pageList": "[5, 10, 25 ]",
-    "pageSize": "5",
+    "pageList": "[5, 10, 25, 50, 100, all ]",
+    "pageSize": "10",
    
     "columns": [
         {
@@ -20,7 +20,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "Qr Code"
         },
         {
             "field": "OrderNumber",
@@ -36,11 +36,11 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "Qr Code"
         },
         {
             "field": "ItemName",
-            "title": "ItemName"
+            "title": "Item Name"
         },
         {
             "field": "Rate",
@@ -58,7 +58,7 @@
             "field": "DCDate"
         },
         {
-            "title": "BranchName",
+            "title": "Branch Name",
             "field": "BranchName"
         },
         {
@@ -70,7 +70,7 @@
             "field": "EntryReturnStarus"
         },
         {
-            "title": "GenSpan",
+            "title": "Gen Span",
             "field": "TimeSpan"
         }
     ]
