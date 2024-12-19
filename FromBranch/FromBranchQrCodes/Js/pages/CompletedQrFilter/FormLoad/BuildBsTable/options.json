@@ -9,7 +9,7 @@
     "queryParams": "",
     "rowStyle": "",
     "pagination": "true",
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5, 10, 25, 50, 100, All]",
     "pageSize": "5",
    
     "filterControl": true,
@@ -21,7 +21,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
+            "title": "Qr Code",
             "filterControl": "select"
         },
         {
@@ -39,7 +39,7 @@
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
+            "title": "Item Name",
             "filterControl": "select"
         },
         {
@@ -59,7 +59,7 @@
             "field": "DCDate"
         },
         {
-            "title": "BranchName",
+            "title": "Branch Name",
             "field": "BranchName",
             "filterControl": "select"
         },

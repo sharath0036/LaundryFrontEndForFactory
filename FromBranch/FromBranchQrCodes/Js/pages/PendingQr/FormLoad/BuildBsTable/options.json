@@ -8,7 +8,7 @@
     "responseHandler": "",
     "queryParams": "",
     "pagination":"true",
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5, 10, 25, 50, ALl ]",
     "pageSize": "5",
    
     "columns": [
@@ -19,7 +19,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "Qr Code"
         },
         {
             "field": "OrderNumber",
@@ -36,7 +36,7 @@
         
         {
             "field": "ItemName",
-            "title": "ItemName"
+            "title": "Item Name"
         },
         {
             "field": "Rate",
@@ -54,7 +54,7 @@
             "field": "DCDate"
         },
         {
-            "title": "BranchName",
+            "title": "Branch Name",
             "field": "BranchName"  
         }
     ]
