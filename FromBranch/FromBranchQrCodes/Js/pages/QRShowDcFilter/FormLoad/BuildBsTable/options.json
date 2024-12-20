@@ -7,11 +7,10 @@
     "onClickRow": "",
     "responseHandler": "",
     "queryParams": "",
-    "rowStyle": "rowStyle",
+    "rowStyle": "",
     "pagination": "true",
-    "filterControl": true,
-    "pageList": "[5, 10, 25, 50, 100, All ]",
-    "pageSize": "100",
+    "pageList": "[5, 10, 25, 50, 100, All]",
+    "pageSize": "5",
    
     "columns": [
         {
