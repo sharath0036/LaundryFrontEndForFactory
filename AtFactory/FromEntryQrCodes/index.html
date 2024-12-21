@@ -1,10 +1,9 @@
-{% extends 'AtFactory/FromEntryQrCodes/layouts/masterWithImage.html' %} {% block
-styles %}
+{% extends 'AtFactory/FromEntryQrCodes/layouts/masterWithOutBreadcrumb.html' %} 
+{% block styles %}
 <link rel="stylesheet" href="/assets/scss/iconly.scss" />
-{% endblock %} {% block content %}
-<div class="page-heading">
-  <h3>Entry QR Statistics</h3>
-</div>
+{% endblock %}
+{% block content %}
+<div class="page-heading"></div>
 <div class="page-content">
   <section class="row">
     <div class="col-12 col-lg-12">
@@ -88,14 +87,12 @@ styles %}
       </div>
       <div class="row">
         <div class="col-12">
-            <img
-            src="./assets/static/images/samples/11.png"
-            class="img-fluid mx-auto d-block"
-            width="30%"
-            height="10%"
-          />
+          <div id="chart-profile-visit">
+            <img src="./assets/static/images/samples/sample1.png" alt="wash"
+              style="object-fit:fill; height:0%; width: 60%; margin-left: 10.5rem" />
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
