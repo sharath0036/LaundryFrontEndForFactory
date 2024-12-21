@@ -1,7 +1,23 @@
-{% extends 'AtFactory/CompletionQrCodes/layouts/masterWithImage.html' %}
+{% extends 'AtFactory/CompletionQrCodes/layouts/masterWithOutHead.html' %}
 
 {% block content %}
-<div class="page-heading">
+    <div class="page-heading">
+        <div class="page-title">
+            <div class="row">
+                <div class="col-12 col-md-6 order-md-1 order-last">
+                    <h3>Show All</h3>
+                    <nav class="d-none d-sm-block">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Dashboard</li>
+                            <li class="breadcrumb-item">Process</li>
+                            <li class="breadcrumb-item">Completion</li>
+                            <li class="breadcrumb-item ">Completion QRCodes</li>
+                            <li class="breadcrumb-item active">AllShow</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
     <!--  Inverse table start -->
     <section class="section">
         <div class="spinner-border" id="SpinnerId" role="status" style="display: none;">
