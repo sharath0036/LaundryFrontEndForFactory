@@ -2,7 +2,6 @@ import { StartFunc as StartFuncFromUrlParams } from "./FromUrlParams/EntryFile.j
 
 const StartFunc = () => {
     StartFuncFromUrlParams();
-
 };
 
 export { StartFunc };

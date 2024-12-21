@@ -1,9 +1,5 @@
-import { StartFunc as StartFuncPop } from "./PopUp.js";
-
 let StartFunc = () => {
   LocalFuncForBranchNameId();
-  StartFuncPop();
-  
 };
 
 let LocalFuncForBranchNameId = () => {
@@ -17,4 +13,4 @@ let LocalFuncForBranchNameId = () => {
   };
 };
 
-export { StartFunc }
+export { StartFunc };

@@ -5,15 +5,15 @@ import { fileURLToPath } from 'url';
 import nunjucks from 'vite-plugin-nunjucks'
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import sidebarItems from "./sidebar-items.json"
-import horizontalMenuItems from "./horizontal-menu-items.json"
+import horizontalMenuItems from "./horizontal-menu-items.json";
+
 const srcFolder = "";
+const CommonOutFolder = "../../PublicDir/Inward/FromBranch/FromBranchVoucher";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const root = resolve(__dirname, srcFolder)
-const CommonOutFolder = "../../PublicDir/Inward/FromBranch/FromBranchVoucher";
-
-// const root = resolve(__dirname, 'src-FromBranchQrCodes')
 
 const getFiles = () => {
     let files = {}
@@ -24,9 +24,9 @@ const getFiles = () => {
             files[filename.slice(0, -5)] = resolve(root, filename)
         })
     return files
-}
+};
 
-const files = getFiles()
+const files = getFiles();
 
 const getVariables = (mode) => {
     const variables = {}
@@ -42,8 +42,7 @@ const getVariables = (mode) => {
         }
     })
     return variables
-}
-
+};
 
 build({
     configFile: false,
@@ -73,7 +72,7 @@ export default defineConfig((env) => ({
     plugins: [
         viteStaticCopy({
             targets: [
-                { src: normalizePath(resolve(__dirname, './src/assets/static')), dest: 'assets' },
+                { src: normalizePath(resolve(__dirname, './assets/static')), dest: 'assets' },
                 { src: normalizePath(resolve(__dirname, `./${CommonOutFolder}/assets/compiled/fonts`)), dest: 'assets/compiled/css' },
                 { src: normalizePath(resolve(__dirname, "./node_modules/bootstrap-icons/bootstrap-icons.svg")), dest: 'assets/static/images' }
             ],
