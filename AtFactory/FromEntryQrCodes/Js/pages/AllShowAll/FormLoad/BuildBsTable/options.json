@@ -35,7 +35,7 @@
         },
         {
             "field": "ItemName",
-            "title": "ItemName"
+            "title": "Item Name"
         },
         {
             "field": "Rate",
@@ -44,7 +44,7 @@
             "footerFormatter": ""
         },
         {
-            "title": "BranchName",
+            "title": "Branch Name",
             "field": "BranchName",
             "filterControl": "select"
         },
@@ -54,7 +54,7 @@
             "filterControl": "select"
         },
         {
-            "title": "GenSpan",
+            "title": "Gen Span",
             "field": "TimeSpan"
         }
     ]
