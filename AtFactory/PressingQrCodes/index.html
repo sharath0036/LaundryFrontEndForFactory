@@ -1,9 +1,8 @@
-{% extends 'AtFactory/PressingQrCodes/layouts/masterWithImage.html' %} {% block
+{% extends 'AtFactory/PressingQrCodes/layouts/masterWithOutBreadcrumb.html' %} {% block
 styles %}
 <link rel="stylesheet" href="/assets/scss/iconly.scss" />
 {% endblock %} {% block content %}
 <div class="page-heading">
-  <h3>Pressing QR Statistics</h3>
 </div>
 <div class="page-content">
   <section class="row">
@@ -107,13 +106,10 @@ styles %}
       </div>
       <div class="row">
         <div class="col-12">
-          <img
-            src="./assets/static/images/samples/pressing.png"
-            alt="picture"
-            class="img-fluid mx-auto d-block"
-            width="30%"
-            height="10%"
-          />
+          <div id="chart-profile-visit">
+            <img src="./assets/static/images/samples/sample1.png" alt="Truck"
+              style="object-fit:fill; height:0%; width: 55%; margin-left: 12.5rem" />
+          </div>
         </div>
       </div>
     </div>
