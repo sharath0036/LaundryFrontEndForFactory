@@ -1,11 +1,9 @@
-{% set title = 'Dashboard' %} {% set filename = 'index.html' %} {% extends
-'FromBranch/FromBranchQrCodes/layouts/masterWithImage.html' %} {% block styles
-%}
+{% set title = 'Dashboard' %} {% set filename = 'index.html' %} 
+{% extends 'FromBranch/FromBranchQrCodes/layouts/masterWithOutBreadcrumb.html' %}
+{% block styles %}
 <link rel="stylesheet" href="/assets/scss/iconly.scss" />
 {% endblock %} {% block content %}
-<div class="page-heading">
-  <h3>QrCodes Statistics</h3>
-</div>
+<div class="page-heading"></div>
 <div class="page-content">
   <section class="row">
     <div class="col-12 col-lg-12">
@@ -89,11 +87,9 @@
       </div>
       <div class="row">
         <div class="col-12">
-          <div class="card">
-            <img
-              src="./assets/static/images/samples/sample1.png"
-              class="img-cover"
-            />
+          <div id="chart-profile-visit">
+            <img src="./assets/static/images/samples/sampless.png" alt="Truck"
+              style="object-fit:fill; height:0%; width: 60%; margin-left: 10.5rem" />
           </div>
         </div>
       </div>
