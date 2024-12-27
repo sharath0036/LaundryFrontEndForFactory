@@ -72,11 +72,5 @@
     "name": "Qr-Reports",
     "icon": "bi bi-qr-code",
     "url": "../FromBranchQrCodes/"
-  },
-  {
-    "name": "Washing",
-    "url": "../../../Process/WashingVoucher/menu.html",
-    "icon": "bi bi-brilliance"
   }
-
 ]
