@@ -43,9 +43,9 @@ let jFLocalFromDomInputVoucherRefId = () => {
 };
 
 let jFLocalFromDomInputBranchNameId = () => {
-    let jVarLocalHtmlInputBranchNameId = 'InputBranchNameId';
+    let jVarLocalHtmlInputBranchNameId = 'BranchNameTextDCDetailsId';
     let jVarHtmlInputBranchNameId = document.getElementById(jVarLocalHtmlInputBranchNameId);
-    let jVarHtmlInputBranchNameIdValue = jVarHtmlInputBranchNameId.value.trim();
+    let jVarHtmlInputBranchNameIdValue = jVarHtmlInputBranchNameId.innerHTML;
     return jVarHtmlInputBranchNameIdValue;
 };
 
