@@ -5,9 +5,9 @@ let StartFunc = ({ inFindColumn }) => {
 let jVarLocalFormatterFunc = (value, row, index) => {
     console.log("value : ", value);
     if (value === true) {
-        return 'Washing';
+        return '<span class="badge bg-danger">Washing</span>';
     } else {
-        return 'Washed';
+        return '<span class="badge bg-success">Washed</span>';
     };
 };
 

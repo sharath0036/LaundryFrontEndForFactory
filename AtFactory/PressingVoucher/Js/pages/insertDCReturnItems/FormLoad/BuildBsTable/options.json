@@ -37,10 +37,6 @@
             "filtercontrol": "select"
         },
         {
-            "title": "Description",
-            "field": "Description"
-        },
-        {
             "field": "BranchName",
             "title": "Branch Name",
             "filtercontrol": "select"
@@ -60,6 +56,10 @@
         {
             "title": "Time Span",
             "field": "TimeSpan"
+        },
+        {
+            "title": "ItemRemark",
+            "field": "Description"
         }
     ]
 }

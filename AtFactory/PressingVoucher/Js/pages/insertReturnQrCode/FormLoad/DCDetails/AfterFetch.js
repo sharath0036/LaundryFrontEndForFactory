@@ -12,7 +12,7 @@ let StartFunc = ({ inDataToShow }) => {
     jFLocalToInputDateTextDCDetailsId({ inDateTextDCDetailsId: jVarLocalData.Date });
     jFLocalToInputDescriptionTextDCDetailsId({ inDescriptionTextDCDetailsId: jVarLocalData.Description });
     jFLocalToInputDCFactoryDCDetailsTextId({ inDCFactoryDCDetailsTextId: jVarLocalData.Factory });
-    jFLocalToInputDCBranchNameDCDetailsTextId({ inDCBranchNameDCDetailsTextId: jVarLocalData.BranchName });
+    jFLocalToInputDCBranchNameDCDetailsTextId({ inDCBranchNameDCDetailsTextId: jVarLocalData.Branch });
 };
 
 let jFLocalToInnerHtmlpkTextId = ({ inpkTextId }) => {
@@ -91,7 +91,7 @@ let jFLocalToInputDCFactoryDCDetailsTextId = ({ inDCFactoryDCDetailsTextId }) =>
 };
 
 let jFLocalToInputDCBranchNameDCDetailsTextId = ({ inDCBranchNameDCDetailsTextId }) => {
-    let jVarLocalHtmlId = 'DCBranchNameDCDetailsTextId';
+    let jVarLocalHtmlId = 'BranchNameTextDCDetailsId';
     let jVarLocalDCBranchNameDCDetailsTextId = document.getElementById(jVarLocalHtmlId);
 
     if (jVarLocalDCBranchNameDCDetailsTextId === null === false) {
