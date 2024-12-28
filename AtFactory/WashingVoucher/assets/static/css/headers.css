@@ -81,3 +81,42 @@
 .card{
   box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
 }
+
+
+/* Card Styles */
+
+.card {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+  padding: 1rem;
+  transition: transform .3s ease, box-shadow .3s ease
+}
+
+.card:hover {
+  transform: translateY(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2)
+}
+
+.card-washing:hover {
+  background-color: #e6e6fa;
+  transform: translateY(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2)
+}
+
+.card-pressing:hover {
+  background-color: #e0f7fa;
+  transform: translateY(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2)
+}
+
+.card-completion:hover {
+  background-color: #ffebee;
+  transform: translateY(5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2)
+}
+
+.card:hover {
+  transform: translateY(-5px) translate(10px)
+}
