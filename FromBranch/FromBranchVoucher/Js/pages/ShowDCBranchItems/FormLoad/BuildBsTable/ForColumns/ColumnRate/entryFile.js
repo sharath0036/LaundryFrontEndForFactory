@@ -13,10 +13,10 @@ function priceFormatter(data) {
 }
 function symbolFormatPrice(data) {
     var field = this.field
-    return '₹ '+data;
+    return '₹ ' + data;
 
- }
+}
 
-
+ 
 
 export { StartFunc };
