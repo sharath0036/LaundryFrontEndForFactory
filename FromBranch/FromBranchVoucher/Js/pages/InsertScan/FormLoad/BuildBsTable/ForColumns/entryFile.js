@@ -29,7 +29,7 @@ let StartFunc = ({ inColumns }) => {
 
     EntryCancel({ inFindColumn: LocalColumnEntryCancel });
 
-    let LocalColumnSerial= LocalColumns.find(element => element.field === "ColumnSerial");
+    let LocalColumnSerial= LocalColumns.find(element => element.field === "KS-Serial");
 
     ColumnSerial({ inFindColumn: LocalColumnSerial });
 
