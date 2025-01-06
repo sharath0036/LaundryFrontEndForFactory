@@ -68,7 +68,7 @@
             "footerFormatter": ""
         },
         {
-            "title": "EntryCancel",
+            "title": "EntryReturn",
             "field": "EntryCancel",
             "footerFormatter": ""
         }
