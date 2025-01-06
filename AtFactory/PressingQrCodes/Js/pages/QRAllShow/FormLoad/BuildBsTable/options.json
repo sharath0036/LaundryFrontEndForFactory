@@ -24,6 +24,26 @@
             "filtercontrol": "select"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
+            "title": "Scan",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
+            "field": "",
+            "title": "Rewash",
+            "footerFormatter": "totalFormatter"
+        },
+        {
+            "title": "Return",
+            "field": "EntryReturnStatus",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #"
         },
@@ -47,26 +67,7 @@
             "formatter":"symbolFormat",
             "footerFormatter": "jVarLocalFormatterFunc"
         },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Scan",
-            "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "field": "",
-            "title": "Rewash",
-            "footerFormatter": "totalFormatter"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStatus",
-            "filterControl": "select"
-        },
+       
         {
             "title": "GenSpan",
             "field": "TimeSpan"

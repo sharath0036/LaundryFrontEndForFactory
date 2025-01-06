@@ -25,6 +25,16 @@
             "filterControl": "select"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
+            "title": "Status",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #",
             "filterControl": "select"
@@ -47,16 +57,7 @@
             "align": "right",
             "footerFormatter": ""
         },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Status",
-            "field": "Status",
-            "filterControl": "select"
-        },
+      
         {
             "title": "GenSpan",
             "field": "TimeSpan"
