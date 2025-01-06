@@ -1,5 +1,5 @@
 const StartFunc = ({ inFindColumn }) => {
-    inFindColumn.formatter = totalFormatter;
+    inFindColumn.footerFormatter = totalFormatter;
    
 };
 

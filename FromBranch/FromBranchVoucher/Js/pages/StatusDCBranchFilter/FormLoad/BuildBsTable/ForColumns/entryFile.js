@@ -1,40 +1,37 @@
-import { StartFunc as ColumnRate } from "./ColumnScanned/entryFile.js";
-import { StartFunc as ColumnSerial } from "./ColumnEntryCancel/entryFile.js";
-import { StartFunc as ColumnSent } from "./ColumnEntryCancel/entryFile.js";
-import { StartFunc as ColumnSerial } from "./ColumnSerial/entryFile.js";
+import { StartFunc as ColumnOperate } from "./ColumnSerial/entryFile.js";
+import { StartFunc as ColumnSent } from "./ColumnSent/entryFile.js";
+import { StartFunc as ColumnScanned } from "./ColumnScanned/entryFile.js";
+import { StartFunc as ColumnPending } from "./ColumnPending/entryFile.js";
+import { StartFunc as ColumnEntryCancel } from "./ColumnEntryCancel/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
-  let LocalColumns = inColumns;
-  let LocalColumnRate = LocalColumns.find(
-    (element) => element.field === "EntryCancel"
-  );
+    let LocalColumns = inColumns;
+    let LocalColumnOperateFine = LocalColumns.find(element => element.field === "KS-Serial")
+    let LocalColumnSent = LocalColumns.find(element => element.field === "Sent");
+    let LocalColumnScanned = LocalColumns.find(element => element.field === "Scanned");
+    let LocalColumnPending = LocalColumns.find(element => element.field === "Pending");
+    let LocalColumnEntryCancel = LocalColumns.find(element => element.field === "EntryCancel");
 
-  let LocalColumnScanned = LocalColumns.find(
-    (element) => element.field === "Scanned"
-  );
+    if (LocalColumnOperateFine === undefined === false) {
+        ColumnOperate({ inFindColumn: LocalColumnOperateFine });
+    };
 
-  let LocalColumnSerial = LocalColumns.find(
-    (element) => element.field === "Serial"
-  );
-  let LocalColumnSent = LocalColumns.find(
-    (element) => element.field === "Sent"
-  );
+    if (LocalColumnSent === undefined === false) {
+        ColumnSent({ inFindColumn: LocalColumnSent });
+    };
 
-  if ((LocalColumnEntryCancel === undefined) === false) {
-    ColumnEntryCancel({ inFindColumn: LocalColumnEntryCancel });
-  }
+    if (LocalColumnScanned === undefined === false) {
+        ColumnScanned({ inFindColumn: LocalColumnScanned });
+    };
 
-  if ((LocalColumnSerial === undefined) === false) {
-    ColumnSerial({ inFindColumn: LocalColumnSerial});
-  }
+    if (LocalColumnPending === undefined === false) {
+        ColumnPending({ inFindColumn: LocalColumnPending });
+    };
 
-  if ((LocalColumnScanned === undefined) === false) {
-    ColumnScanned({ inFindColumn: LocalColumnScanned });
-  }
+    if (LocalColumnEntryCancel === undefined === false) {
+        ColumnEntryCancel({ inFindColumn: LocalColumnEntryCancel });
+    };
 
-  if ((LocalColumnSent === undefined) === false) {
-    ColumnSent({ inFindColumn: LocalColumnSent });
-  }
 };
 
 export { StartFunc };
