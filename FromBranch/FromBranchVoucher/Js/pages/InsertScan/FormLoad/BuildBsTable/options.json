@@ -17,7 +17,7 @@
         {
             "field": "KS-Serial",
             "title": "#",
-            "formatter": "jFLocalSerialColumn"
+            "formatter": ""
         },
         {
             "field": "pk",
