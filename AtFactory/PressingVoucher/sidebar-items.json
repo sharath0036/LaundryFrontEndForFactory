@@ -28,6 +28,28 @@
     ]
   },
   {
+    "name": "VerticalShow",
+    "key": "Show",
+    "icon": "bi bi-table",
+    "submenu": [
+      
+      {
+        "name": "ScannedDCQrs",
+        "url": "ShowScannedQrs.html"
+      },
+      {
+        "name": "ReturnDcQrs",
+        "url": "ShowReturnDcQrs.html"
+      },
+      {
+        "name": "RewashDcQrs",
+        "url": "ShowRewashDcQrs.html"
+      }
+      
+    ]
+  },
+  
+  {
     "name": "Insert",
     "key": "insert",
     "icon": "stack",
