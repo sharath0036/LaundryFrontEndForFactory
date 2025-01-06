@@ -11,7 +11,6 @@
     "pagination": "true",
     "pageList": "[5, 10, 25, 50, 100, All ]",
     "pageSize": "5",
-   
     "filterControl": true,
     "columns": [
         {
@@ -45,8 +44,8 @@
         {
             "title": "Rate",
             "field": "Rate",
-            "align":"right",
-            "formatter":"symbolFormat",
+            "align": "right",
+            "formatter": "symbolFormat",
             "footerFormatter": "jVarLocalFormatterFunc"
         },
         {
@@ -62,6 +61,10 @@
             "title": "Branch Name",
             "field": "BranchName",
             "filterControl": "select"
+        },
+        {
+            "title": "Description",
+            "field": "Description"
         },
         {
             "title": "Gen Span",

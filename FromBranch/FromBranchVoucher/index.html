@@ -70,7 +70,6 @@
                 </div>
                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                   <h6 class="text-muted font-semibold">RejectedDC</h6>
-                  <h6 class="font-extrabold mb-0">112</h6>
                 </div>
               </div>
             </div>
@@ -78,13 +77,38 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" id="table-inverse">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-body">
+                <form class="form form-horizontal" id="FormId" onsubmit="return false">
+                  <div class="form-body">
+                    <div class="col">
+                      <div class="col-md-4" style="font-weight: bolder; font-size:x-large;">
+                        <label for="ScanDC">ScanDC</label>
+                      </div>
+                      <div class="col-md-8 form-group input-group input-group-lg">
+                        <input type="number" id="ScanDC" class="form-control" name="ScanDC"
+                          placeholder="ScanDC" required autofocus>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
         <div class="col-12">
           <div id="chart-profile-visit">
             <img src="./assets/static/images/samples/rb_22226.png" alt="Truck" style="object-fit:cover; width:90%" />
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </div>
