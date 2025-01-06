@@ -40,7 +40,7 @@
         {
             "title": "Items",
             "formatter": "ItemsFormatter",
-            "footerFormatter": "priceFormatter"
+            "footerFormatter": ""
         },
         {
             "title": "Scan",
