@@ -24,6 +24,26 @@
             "title": "QrCode"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
+            "title": "Status",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
+            "field": "ReWash",
+            "title": "Rewash",
+            "footerFormatter": ""
+        },
+        {
+            "title": "Return",
+            "field": "EntryReturnStatus",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #",
             "filterControl": "select"
@@ -48,26 +68,7 @@
             "formatter":"symbolFormat",
             "footerFormatter": "totalFormatter"
         },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Status",
-            "field": "Status",
-            "filterControl": "select"
-        },
-        {
-            "field": "ReWash",
-            "title": "Rewash",
-            "footerFormatter": ""
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStatus",
-            "filterControl": "select"
-        },
+       
         {
             "title": "GenSpan",
             "field": "TimeSpan"

@@ -24,6 +24,16 @@
             "filterControl": "select"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
+            "title": "Status",
+            "field": "Status",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderNumber",
             "title": "Order #",
             "filterControl": "select"
@@ -45,16 +55,6 @@
             "title": "Rate",
             "align":"right",
             "footerFormatter": "totalFormatter"
-        },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Status",
-            "field": "Status",
-            "filterControl": "select"
         },
         {
             "title": "GenSpan",
