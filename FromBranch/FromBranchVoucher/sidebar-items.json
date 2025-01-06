@@ -4,11 +4,6 @@
     "isTitle": true
   },
   {
-    "name": "Factory Menu",
-    "url": "FactoryMenu.html",
-    "icon": "bi bi-house-door"
-  },
-  {
     "name": "Dashboard",
     "url": "index.html",
     "icon": "grid-fill"
@@ -29,7 +24,6 @@
     "key": "Show",
     "icon": "bi bi-table",
     "submenu": [
-      
       {
         "name": "FromBranchDCQrs",
         "url": "ShowDCBranchItems.html"
