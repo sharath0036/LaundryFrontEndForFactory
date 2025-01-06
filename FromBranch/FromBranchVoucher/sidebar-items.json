@@ -25,16 +25,20 @@
     "icon": "bi bi-table",
     "submenu": [
       {
-        "name": "DCItems",
+        "name": "ScannedDCQrcodes",
         "url": "ShowDCItems.html"
       },
       {
-        "name": "BranchDCItems",
+        "name": "FromBranchDCQrcodes",
         "url": "ShowDCBranchItems.html"
       },
       {
-        "name": "DCEntryCancelItems",
+        "name": "ReturnDCQrcodes",
         "url": "ShowDCEntryCancel.html"
+      },
+      {
+        "name": "PendingDCQrcodes",
+        "url": "ShowDCPendingItems.html"
       }
     ]
   },
