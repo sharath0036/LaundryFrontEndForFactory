@@ -25,40 +25,6 @@
             "filterControl": "select"
         },
         {
-            "field": "OrderNumber",
-            "title": "Order #",
-            "filterControl": "select"
-        },
-        {
-            "field": "OrderDate",
-            "title": "Order Date"
-        },
-        {
-            "field": "DeliveryDate",
-            "title": "Delivery Date"
-        },
-        {
-            "field": "ItemName",
-            "title": "Item Name",
-           "filterControl": "select"
-        },
-        {
-            "field": "Rate",
-            "title": "Rate",
-            "align":"right",
-            "formatter":"symbolFormat",
-            "footerFormatter": "jVarLocalFormatterFunc"
-        },
-        {
-            "field": "VoucherNumber",
-            "title": "DC #",
-           "filterControl": "select"
-        },
-        {
-            "title": "DC Date",
-            "field": "DCDate"
-        },
-        {
             "title": "Branch",
             "field": "BranchName",
            "filterControl": "select"
@@ -74,6 +40,41 @@
             "field": "EntryReturnStarus"
            
         },
+        {
+            "field": "OrderNumber",
+            "title": "Order #",
+            "filterControl": "select"
+        },
+        {
+            "field": "ItemName",
+            "title": "Item Name",
+           "filterControl": "select"
+        },
+        {
+            "field": "Rate",
+            "title": "Rate",
+            "align":"right",
+            "formatter":"symbolFormat",
+            "footerFormatter": "jVarLocalFormatterFunc"
+        },
+        {
+            "field": "OrderDate",
+            "title": "Order Date"
+        },
+        {
+            "field": "DeliveryDate",
+            "title": "Delivery Date"
+        },
+        {
+            "field": "VoucherNumber",
+            "title": "DC #",
+           "filterControl": "select"
+        },
+        {
+            "title": "DC Date",
+            "field": "DCDate"
+        },
+     
         {
             "title": "Gen Span",
             "field": "TimeSpan"

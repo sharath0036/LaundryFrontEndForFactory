@@ -64,6 +64,10 @@
             "filtercontrol": "select"
         },
         {
+            "title": "Description",
+            "field": "Description"
+        },
+        {
             "title": "Gen Span",
             "field": "TimeSpan",
             "filtercontrol": "select"
