@@ -24,21 +24,22 @@
     "key": "Show",
     "icon": "bi bi-table",
     "submenu": [
+      
       {
-        "name": "ScannedDCQrcodes",
-        "url": "ShowDCItems.html"
-      },
-      {
-        "name": "FromBranchDCQrcodes",
+        "name": "FromBranchDCQrs",
         "url": "ShowDCBranchItems.html"
       },
       {
-        "name": "ReturnDCQrcodes",
-        "url": "ShowDCEntryCancel.html"
+        "name": "ScannedDCQrs",
+        "url": "ShowDCItems.html"
       },
       {
-        "name": "PendingDCQrcodes",
+        "name": "PendingDCQrs",
         "url": "ShowDCPendingItems.html"
+      },
+      {
+        "name": "ReturnDCQrs",
+        "url": "ShowDCEntryCancel.html"
       }
     ]
   },
