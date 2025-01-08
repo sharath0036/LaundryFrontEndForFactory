@@ -3,6 +3,7 @@ import { StartFunc as ColumnStatus } from "./ColumnStatus/entryFile.js";
 import { StartFunc as ColumnScan } from "./ColumnScan/entryFile.js";
 import { StartFunc as ColumnReturn } from "./ColumnReturn/entryFile.js";
 import { StartFunc as ColumnRate } from "./ColumnRate/entryFile.js";
+import { StartFunc as ColumnRewash } from "./ColumnRewash/entryFile.js";
 
 let StartFunc = ({ inColumns }) => {
     let LocalColumns = inColumns;
@@ -11,6 +12,7 @@ let StartFunc = ({ inColumns }) => {
     let LocalColumnScan = LocalColumns.find(element => element.field === "Scan");
     let LocalColumnReturn = LocalColumns.find(element => element.field === "EntryReturnStatus");
     let LocalColumnRate = LocalColumns.find(element => element.field === "Rate");
+    let LocalColumnRewash = LocalColumns.find(element => element.field === "ReWash");
 
     if (LocalColumnOperateFine === undefined === false) {
         ColumnOperate({ inFindColumn: LocalColumnOperateFine });
@@ -26,6 +28,9 @@ let StartFunc = ({ inColumns }) => {
     };
     if (LocalColumnRate === undefined === false) {
         ColumnRate({ inFindColumn: LocalColumnRate });
+    };
+    if (LocalColumnRewash === undefined === false) {
+        ColumnRewash({ inFindColumn: LocalColumnRewash });
     };
 };
 export { StartFunc };

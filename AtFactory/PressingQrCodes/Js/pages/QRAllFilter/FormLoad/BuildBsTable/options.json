@@ -35,7 +35,8 @@
         },
         {
             "field": "ReWash",
-            "title": "Rewash",
+            "title": "Wash",
+            "filterControl": "select",
             "footerFormatter": ""
         },
         {

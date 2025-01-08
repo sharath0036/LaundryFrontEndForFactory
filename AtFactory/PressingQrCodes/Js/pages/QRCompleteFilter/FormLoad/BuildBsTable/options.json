@@ -43,6 +43,11 @@
             "title": "ItemName"
         },
         {
+            "field": "ReWashStatus",
+            "title": "Wash",
+            "filterControl": "select"
+        },
+        {
             "field": "Rate",
             "title": "Rate",
             "align":"right",
@@ -65,8 +70,8 @@
         },
         {
             "title": "Return",
-            "field": "EntryReturnStarus"
-            
+            "field": "EntryReturnStarus",
+            "filterControl": "select"
         },
         {
             "title": "TimeSpan",
