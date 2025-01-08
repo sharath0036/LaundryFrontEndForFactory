@@ -1,3 +1,6 @@
+// import { StartFunc as StartFuncButtonSaveId } from "./ButtonSaveId/1-ClickAssign.js";
+import { StartFunc as StartFuncButtonSaveId } from "../../../ButtonSaveId/1-ClickAssign.js";
+
 let StartFunc = async ({ inFetchResonse }) => {
     let jVarLocalResponseData = await inFetchResonse.json();
 
@@ -14,15 +17,39 @@ let StartFunc = async ({ inFetchResonse }) => {
         jFLocalToInputOrderNumberId({ inInputValue: jVarLocalFetchData.GenerateReference.ReferncePk });
         jFLocalToInputOrderDateId({ inInputValue: jVarLocalFetchData.BookingData.OrderData.Currentdateandtime });
         jFLocalToInputDeliveryDateId({ inInputValue: jVarLocalFetchData.DeliveryDateTime });
-        // jFLocalRunSaveClick();
+        jFLocalRunSaveClick();
     };
 };
-
 let jFLocalRunSaveClick = () => {
-    let jVarLocalHtmlId = 'ButtonSaveId';
-    let jVarLocalButtonSaveId = document.getElementById(jVarLocalHtmlId);
-    jVarLocalButtonSaveId.click();
-}
+    // Validate specific fields before triggering the Save button
+    if (jFValidateSpecificInputs()) {
+        StartFuncButtonSaveId()
+    }
+    else{
+        alert("enter the qr code");
+    }
+};
+
+let jFValidateSpecificInputs = () => {
+    
+    let requiredFields = [
+        'InputProductNameId',  // Product Name
+        'InputSalePriceId',    // Sale Price
+        'InputBranchNameId',   // Branch Name
+        'OrderDateId'          // Order Date
+    ];
+
+    // Iterate through the required fields and check if any is empty
+    for (let fieldId of requiredFields) {
+        let fieldElement = document.getElementById(fieldId);
+        if (fieldElement === null || fieldElement.value.trim() === "") {
+           
+            return false; 
+        }
+    }
+
+    return true; 
+};
 
 let jFLocalToInputInputProductNameId = ({ inInputProductNameId }) => {
     let jVarLocalHtmlId = 'InputProductNameId';
