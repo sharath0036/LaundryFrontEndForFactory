@@ -34,7 +34,7 @@
             "filterControl": "select"
         },
         {
-            "field": "",
+            "field": "ReWash",
             "title": "Rewash",
             "footerFormatter": "totalFormatter"
         },
