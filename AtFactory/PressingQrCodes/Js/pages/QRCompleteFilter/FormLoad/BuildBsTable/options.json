@@ -24,9 +24,25 @@
             "title": "QrCode"
             
         },
+        
         {
             "field": "OrderNumber",
             "title": "Order #",
+            "filterControl": "select"
+        },
+        {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
+            "field": "ReWashStatus",
+            "title": "Wash",
+            "filterControl": "select"
+        },
+        {
+            "title": "Return",
+            "field": "EntryReturnStarus",
             "filterControl": "select"
         },
         {
@@ -42,11 +58,7 @@
             "field": "ItemName",
             "title": "ItemName"
         },
-        {
-            "field": "ReWashStatus",
-            "title": "Wash",
-            "filterControl": "select"
-        },
+        
         {
             "field": "Rate",
             "title": "Rate",
@@ -63,16 +75,7 @@
             "field": "DCDate"
             
         },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
-        {
-            "title": "Return",
-            "field": "EntryReturnStarus",
-            "filterControl": "select"
-        },
+        
         {
             "title": "TimeSpan",
             "field": "TimeSpan"

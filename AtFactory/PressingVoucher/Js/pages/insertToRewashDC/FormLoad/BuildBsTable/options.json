@@ -10,7 +10,7 @@
     "pagination":"true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
+   "filterControl": "true",
     "rowStyle": "rowStyle",
     "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/ReWash/Voucher/$FactoryName",
     "columns": [
@@ -21,13 +21,11 @@
         },
         {
             "field": "pk",
-            "title": "DC",
-            "filtercontrol": "input"
+            "title": "DC"
         },
         {
             "field": "Date",
-            "title": "Date",
-            "filtercontrol": "select"
+            "title": "Date"
         },
         {
             "field": "Description",
@@ -35,7 +33,7 @@
             "filtercontrol": "select"
         },
         {
-            "title": "Items",
+            "title": "Qrs",
             "formatter": "ItemsFormatter",
             "footerFormatter": "priceFormatter"
         },

@@ -8,7 +8,7 @@
     "pagination":"true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
+   "filterControl": "true",
     "data": [],
     "onClickRow": "",
     "columns": [
@@ -19,32 +19,33 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode"
+            "title": "QrCode",
+            "filterControl": "select"
         },
         {
             "field": "OrderNumber",
             "title": "OrderNumber",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "OrderDate",
-            "field": "OrderDate",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "DeliveryDate",
-            "field": "DeliveryDate",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "field": "BranchName",
             "title": "Branch Name",
-            "filtercontrol": "select"
+            "filterControl": "select"
+        },
+        {
+            "title": "OrderDate",
+            "field": "OrderDate"
+            
+        },
+        {
+            "title": "DeliveryDate",
+            "field": "DeliveryDate"
+            
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
-            "filtercontrol": "select"
+            "title": "ItemName"
+            
         },
         {
             "title": "Rate",

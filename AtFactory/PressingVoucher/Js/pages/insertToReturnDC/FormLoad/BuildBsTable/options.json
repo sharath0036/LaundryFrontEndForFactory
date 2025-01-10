@@ -10,7 +10,7 @@
     "pagination":"true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-   
+   "filterControl": "true",
     "rowStyle": "rowStyle",
     "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Return/Voucher/$FactoryName",
     "columns": [
@@ -21,23 +21,21 @@
         },
         {
             "field": "pk",
-            "title": "DC",
-            "filtercontrol": "input"
-        },
-        {
-            "field": "Date",
-            "title": "Date",
-            "filtercontrol": "select"
+            "title": "DC"
         },
         {
             "field": "Branch",
             "title": "Branch Name",
-            "filtercontrol": "select"
+            "filterControl": "select"
+        },
+        {
+            "field": "Date",
+            "title": "Date"
+            
         },
         {
             "field": "Description",
-            "title": "Description",
-            "filtercontrol": "select"
+            "title": "Description"
         },
         {
             "title": "Items",

@@ -10,6 +10,7 @@
     "pagination":"true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
+    "filterControl": "true",
    
     "rowStyle": "rowStyle",
     "url": "/Custom/Cleaning/Factory/V1/Process/Pressing/Scan/Voucher/$FactoryName",
@@ -22,20 +23,18 @@
         {
             "field": "pk",
             "title": "DC",
-            "filtercontrol": "input"
+            "filterControl": "select"
         },
         {
             "field": "Date",
-            "title": "Date",
-            "filtercontrol": "select"
+            "title": "Date"
         },
         {
             "field": "Description",
-            "title": "Description",
-            "filtercontrol": "select"
+            "title": "Description"
         },
         {
-            "title": "Items",
+            "title": "Qrs",
             "field":"ItemDetails",
             "formatter": "ItemsFormatter",
             "footerFormatter": "totalFormatter"
