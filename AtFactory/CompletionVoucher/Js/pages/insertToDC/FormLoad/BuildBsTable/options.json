@@ -33,7 +33,7 @@
             "filtercontrol": "select"
         },
         {
-            "title": "Items",
+            "title": "Qrs",
             "formatter": "ItemsFormatter",
             "footerFormatter": "priceFormatter"
         },
