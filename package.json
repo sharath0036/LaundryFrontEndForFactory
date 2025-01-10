@@ -4,7 +4,7 @@
   "description": "factory ui in mazer vite",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "FromBranchQrCodes": "vite build --config FromBranch/FromBranchQrCodes/vite.config.js",
     "FromBranchVoucher": "vite build --config FromBranch/FromBranchVoucher/vite.config.js",
