@@ -29,6 +29,17 @@
             "field": "OrderNumber",
             "filterControl": "select"
         },
+        
+        {
+            "title": "Status",
+            "field": "ReWash",
+            "filterControl": "select"
+        },
+        {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
         {
             "title": "Order Date",
             "field": "OrderDate"
@@ -53,19 +64,13 @@
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber",
+            "field": "DcNumber",
             "filtercontrol": "select"
         },
         {
             "title": "R DCDate",
             "field": "DCDate",
             "filtercontrol": "select"
-        },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-
         },
         {
             "title": "GenSpan",

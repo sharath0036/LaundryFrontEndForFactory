@@ -27,6 +27,14 @@
             "field": "OrderNumber"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName"
+        },
+        {
+            "title": "Status",
+            "field": "ReWash"
+        },
+        {
             "title": "Order Date",
             "field": "OrderDate"
         },
@@ -47,15 +55,11 @@
         },
         {
             "title": "R DC #",
-            "field": "VoucherNumber"
+            "field": "DcNumber"
         },
         {
             "title": "R DCDate",
             "field": "DCDate"
-        },
-        {
-            "title": "BranchName",
-            "field": "BranchName"
         },
         {
             "title": "GenSpan",
