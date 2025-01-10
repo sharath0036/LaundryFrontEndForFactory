@@ -35,7 +35,7 @@
             "filtercontrol": "select"
         },
         {
-            "title": "Items",
+            "title": "Qrs",
             "field": "ItemDetails",
             "formatter": "ItemsFormatter",
             "footerFormatter": "totalFormatter"
