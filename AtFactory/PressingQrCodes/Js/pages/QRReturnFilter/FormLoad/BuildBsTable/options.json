@@ -29,6 +29,11 @@
             "filterControl": "select"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
             "title": "Order Date",
             "field": "OrderDate"
         },
@@ -56,11 +61,7 @@
             "title": "R DCDate",
             "field": "DCDate"
         },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
-        },
+        
         {
             "title": "GenSpan",
             "field": "TimeSpan"

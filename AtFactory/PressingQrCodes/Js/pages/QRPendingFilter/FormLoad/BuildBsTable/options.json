@@ -28,6 +28,11 @@
             "filterControl": "select"
         },
         {
+            "title": "BranchName",
+            "field": "BranchName",
+            "filterControl": "select"
+        },
+        {
             "field": "OrderDate",
             "title": "Order Date"
         },
@@ -46,11 +51,6 @@
             "align":"right",
             "formatter":"symbolFormat",
             "footerFormatter": "jVarLocalFormatterFunc"
-        },
-        {
-            "title": "BranchName",
-            "field": "BranchName",
-            "filterControl": "select"
         }
     ]
 }

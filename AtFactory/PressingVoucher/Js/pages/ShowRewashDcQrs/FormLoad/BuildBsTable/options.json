@@ -8,9 +8,10 @@
     "pagination": "true",
     "pageList": "[5, 10, 25 ]",
     "pageSize": "5",
-    "filtercontrol": true,
+    
     "data": [],
     "onClickRow": "",
+    "filterControl": true,
     "columns": [
         {
             "field": "KS-Serial",
@@ -24,39 +25,35 @@
         {
             "field": "OrderNumber",
             "title": "OrderNumber",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "OrderDate",
-            "field": "OrderDate",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "DeliveryDate",
-            "field": "DeliveryDate",
-            "filtercontrol": "select"
+            "filterControl": "select"
         },
         {
             "field": "BranchName",
             "title": "Branch Name",
-            "filtercontrol": "select"
+            "filterControl": "select"
+        },
+        {
+            "title": "OrderDate",
+            "field": "OrderDate"
+        },
+        {
+            "title": "DeliveryDate",
+            "field": "DeliveryDate"
         },
         {
             "field": "ItemName",
-            "title": "ItemName",
-            "filtercontrol": "select"
+            "title": "ItemName"
+          
         },
         {
             "title": "Rate",
             "field": "Rate",
             "align": "right",
-            "filtercontrol": "select",
             "footerFormatter": "totalFormatter"
         },
         {
             "title": "ReWash",
-            "field": "ReWash",
-            "filtercontrol": "select"
+            "field": "ReWash"
         },
         {
             "title": "Time Span",
