@@ -44,7 +44,7 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background-color: rgb(9, 98, 71); /* Blue color */
+  background-color: #0450a8; /* Blue color */
   color: white;
   font-size: 24px;
   line-height: 60px;
@@ -75,13 +75,47 @@
 
 /* Hover effect */
 .rounded-button:hover {
-  background-color: rgb(5, 80, 43); /* Darker shade of blue */
+  /* background-color: rgb(5, 80, 43); Darker shade of blue */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 .card{
   box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
 }
+#app .page-content section .col-lg-12 .row .col-4{
+  margin-left: 1rem;
+  width: 350px;
+}
 
+#app footer{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.custom-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card-icon {
+  background-color: #e0e0e0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+.card-title {
+  font-weight: bold;
+  margin-top: 1rem;
+}
 /* Card */
 .card {
   margin-bottom: 30px;
