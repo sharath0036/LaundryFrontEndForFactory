@@ -44,7 +44,7 @@
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    background-color: #0d6efd !important;
+    background-color: #0450a8 !important;
     color: #fff;
     font-size: 24px;
     line-height: 60px;
@@ -73,7 +73,7 @@
 }
 
 .rounded-button:hover {
-    background-color: #0d6efd !important;
+    background-color: #0450a8!important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, .4)
 }
 .card{
@@ -115,4 +115,7 @@
   
   .card-img-overlay {
     background-color: rgba(255, 255, 255, 0.6);
+  }
+  #ButtonSaveId{
+    background-color: #0450a8 !important;
   }
