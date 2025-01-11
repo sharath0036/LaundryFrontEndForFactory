@@ -45,10 +45,12 @@
             "title": "ItemName"
           
         },
+        
         {
-            "title": "Rate",
             "field": "Rate",
-            "align": "right",
+            "title": "Rate",
+            "align":"right",
+            "formatter":"symbolFormat",
             "footerFormatter": "totalFormatter"
         },
         {

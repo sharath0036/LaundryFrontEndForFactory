@@ -47,10 +47,11 @@
             
         },
         {
-            "title": "Rate",
             "field": "Rate",
+            "title": "Rate",
             "align":"right",
-            "footerFormatter":"totalFormatter"
+            "formatter":"symbolFormat",
+            "footerFormatter": "totalFormatter"
         },
         {
             "title": "Time Span",

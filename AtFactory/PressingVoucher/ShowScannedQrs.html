@@ -87,38 +87,6 @@
     </section>
 </div>
 
-
-    <script>
-        let jVarGlobalPresentViewData;
-
-        function jFLocalSerialColumn(value, row, index) {
-            return index + 1;
-        };
-
-
-        function priceFormatter(data) {
-            var field = this.field
-            return '' + data.map(function (row) {
-                return +row.ItemDetails
-            }).reduce(function (sum, i) {
-                return sum + i
-            }, 0)
-        }
-        function totalFormatter(data) {
-        var field = this.field;
-        let LocalTotal = data.map(function (row) {
-            if (row[field] === undefined) {
-                return 0;
-            };
-            return +row[field];
-        }).reduce(function (sum, i) {
-            return sum + i
-        }, 0);
-
-        return Math.floor(LocalTotal);
-    };
-
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.23.5/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
