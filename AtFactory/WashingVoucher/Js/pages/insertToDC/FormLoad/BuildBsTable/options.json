@@ -7,7 +7,7 @@
     "onClickRow": "",
     "responseHandler": "responseHandler",
     "pagination":"true",
-    "pageList": "[5, 10, 25 ]",
+    "pageList": "[5, 10, 25, All]",
     "pageSize": "5",
    
     "queryParams": "queryParams",
