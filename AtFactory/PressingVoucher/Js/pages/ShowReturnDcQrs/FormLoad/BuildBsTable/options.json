@@ -19,8 +19,7 @@
         },
         {
             "field": "QrCodeId",
-            "title": "QrCode",
-            "filterControl": "select"
+            "title": "QrCode"
         },
         {
             "field": "OrderNumber",
@@ -51,7 +50,6 @@
             "title": "Rate",
             "field": "Rate",
             "align":"right",
-            "filtercontrol": "select",
             "footerFormatter":"totalFormatter"
         },
         {
