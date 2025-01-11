@@ -30,17 +30,17 @@
             "filtercontrol": "select"
         },
         {
+            "field": "Branch",
+            "title": "BranchName",
+            "filterControl": "select"
+        },
+        {
             "field": "Description",
             "title": "Description",
             "filtercontrol": "select"
         },
         {
-            "field": "Branch",
-            "title": "BranchName",
-            "filtercontrol": "select"
-        },
-        {
-            "title": "Items",
+            "title": "Qrs",
             "formatter": "ItemsFormatter",
             "footerFormatter": ""
         },
