@@ -4,11 +4,6 @@
     "isTitle": true
   },
   {
-    "name": "Factory Menu",
-    "url": "../FromBranchVoucher/FactoryMenu.html",
-    "icon": "bi bi-house-door-fill"
-  },
-  {
     "name": "Dashboard",
     "url": "index.html",
     "icon": "grid-fill"
@@ -40,6 +35,10 @@
       {
         "name": "PendingDCQrs",
         "url": "ShowDCPendingItems.html"
+      },
+      {
+        "name": "ReturnDCQrs",
+        "url": "ShowDCWiseEntryCancel.html"
       },
       {
         "name": "ReturnDCQrs",
