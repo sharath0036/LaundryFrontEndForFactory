@@ -37,7 +37,7 @@
         "url": "ShowDCPendingItems.html"
       },
       {
-        "name": "ReturnDCQrs",
+        "name": "FromBranchReturnDCQrs",
         "url": "ShowDCWiseEntryCancel.html"
       },
       {
