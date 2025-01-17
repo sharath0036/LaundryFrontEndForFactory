@@ -4,6 +4,11 @@
     "isTitle": true
   },
   {
+    "name": "Factory Menu",
+    "url": "../../../Factory/Inward/FromBranch/FromBranchVoucher/FactoryMenu.html",
+    "icon": "bi bi-house-door-fill"
+  },
+  {
     "name": "Dashboard",
     "url": "index.html",
     "icon": "grid-fill"
